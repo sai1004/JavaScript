@@ -4,7 +4,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="/jsarrays.html" onsubmit="return validate()">
+    <form action="/jsarrays.html" onsubmit="return validate()">  // return is mentioned cause returning values in fi statement
       <p id="para"></p>
 
       <input type="text" placeholder="username" id="uname" />
@@ -18,7 +18,7 @@
 
     <script>
       function validate() {
-        var uname = document.getElementById("uname").value;
+        var uname = document.getElementById("uname").value;   //.value is the input value
         var passwd = document.getElementById("passwd").value;
 
         if (uname == "" || passwd == "") {
