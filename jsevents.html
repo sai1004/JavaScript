@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Hello wrold</h3>
+    <!-- //  =====================basic input validation ============================== -->
+
+    <!-- 
+    <input type="text" id="userinput" />
+
+    <button id="button" onclick="addTo()">Add</button>
+
+    <p id="para"></p> -->
+
+    <!-- <input type="text" id="userinput" />
+
+    <button id="button">Add</button>
+
+    <p id="para"></p>
+    <p>Get Screen Resolution</p>
+    <button id="resolution">click</button>
+    <div style="background-color: gray; height: 200px; width: 300px;" id="box">
+      <h3>In side The Box</h3>
+    </div> -->
+
+    <!-- <button class="btn btn-primary" id="button">click</button>
+    <br />
+    <br />
+    <br /> -->
+    <p>add a value to multiply it with *4</p>
+    <input type="text" id="userinput" />
+    <br />
+    <br />
+    <button id="add">Add</button>
+
+    <p id="result"></p>
+
+    <script>
+      //   ============================== runTimeEvents ==========================
+      // var button = document.getElementById("button");
+      // var box = document.getElementById("box");
+      // var screenResolution = document.getElementById("resolution");
+
+      // button.addEventListener("click", runTimeEvent);
+
+      // function runTimeEvent(e) {
+      //   console.log("Event type: " + e.type);
+      //   document.body.style.backgroundColor = "green";
+      // }
+
+      // screenResolution.addEventListener("click", getResolution);
+
+      // function getResolution() {
+      //   console.log("X: " + screen.width, "Y: " + screen.height);
+      //   document.getElementById("para").innerHTML = "check in console ";
+      // }
+
+      //======mouse events========\\
+      // box.addEventListener("mouseenter", runEvent);
+      // box.addEventListener("mouseleave", runEvent);
+      // box.addEventListener("mouseover", runEvent); // works on inside elements
+      // box.addEventListener("mouseout", runEvent);
+
+      // box.addEventListener("mousemove", runEvent);
+
+      // function runEvent(e) {
+      //   console.log("Event type:" + e.type);
+      //   // console.log(e.target.id);
+
+      //   let output = console.log(
+      //     "mouseMovePosition:",
+      //     "X: " + e.offsetX,
+      //     "Y: " + e.offsetY
+      //   );
+      // }
+
+      // ***************************************************************************************************
+      //  =====================basic input validation ==============================
+      //   function addTo() {
+      //     var userInput = document.getElementById("userinput").value;
+
+      //     if (userInput == null || userInput == "") {
+      //       document.getElementById("para").innerHTML = "please enter value";
+      //     } else {
+      //       // items.push(userInput);
+      //       document.getElementById("para").innerHTML = userInput;
+      //     }
+      //   }
+
+      // var btn = document.getElementById("button");
+
+      // btn.addEventListener("click", runTimeEvent);
+
+      // function runTimeEvent(e) {
+      //   console.log(e.target.id);
+
+      //   console.log(e.target.classList);
+      // }
+
+      var add = document.getElementById("add");
+
+      add.addEventListener("dblclick", addInput);
+
+      function addInput() {
+        var input = document.getElementById("userinput").value;
+
+        if (input == "" || input == null) {
+          document.getElementById("result").innerHTML =
+            "please enter the value";
+        } else {
+          document.getElementById("result").innerHTML = input * 4;
+
+        }
+
+      }
+    </script>
+  </body>
+</html>
