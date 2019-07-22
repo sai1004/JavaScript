@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="header" style="text-align: center">JavaScript Practice</h3>
+
+    <input type="text" id="userinput" />
+
+    <button id="button">Add</button>
+
+    <p id="para"></p>
+    <script>
+      var button = document
+        .getElementById("button")
+        .addEventListener("keypress", enter);
+
+      function enter(e) {
+        var userinput = document.getElementById("userinput").value;
+
+        document.getElementById("para").innerHTML = userinput;
+
+        console.log(e.target.id, e.type);
+
+        document.body.style.backgroundColor = "blue";
+      }
+    </script>
+  </body>
+</html>
