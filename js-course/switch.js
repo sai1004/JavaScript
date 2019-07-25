@@ -4,7 +4,7 @@
 
 var slot = 90;
 
-switch (slot) {
+switch (slot) { // pass parameter 
   case 1:
     console.log("you won a tv");
     break;
@@ -24,5 +24,6 @@ switch (slot) {
     console.log("you won the car");
     break;
   default:
-    console.log("ohh ohh better luck next time!!");
+    console.log("ohh ohh!! better luck next time..");
 }
+
