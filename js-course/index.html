@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Document</title>
-</head>
-<body>
-    <h3 id="heading"> Java Script Course </h3>
+    <style>
+      .form-lay-out {
+        background-color: gray;
+        height: 300px;
+      }
+      form {
+        padding-top: 80px;
+        /* border: 2px solid black; */
+      }
+      input,
+      button {
+        margin-left: 40%;
+      }
+      button {
+        background-color: indigo;
+        color: white;
+        border: none;
+        outline: none;
+        width: 170px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="heading">Java Script Course</h3>
 
-    <p id="para"></p>
-    <script type="text/javascript" src="switch.js"></script>
-    <script type="text/javascript" src="oprators.js"></script>
-
-
-</body>
+    <div class="form-lay-out">
+      <form action="">
+        <input type="email" name="email" id="email" placeholder="email" />
+        <br />
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <br /><br />
+        <button id="button">Click</button>
+      </form>
+      <p id="para"></p>
+    </div>
+    <!-- <script type="text/javascript" src="switch.js"></script> -->
+    <!-- <script type="text/javascript" src="oprators.js"></script> -->
+    <script type="text/javascript" src="functions.js"></script>
+    <!-- <script type="text/javascript" src="loops.js"></script> -->
+  </body>
 </html>
