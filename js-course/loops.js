@@ -1,62 +1,73 @@
 //=== for loops ===\\
 
-for (let x = 0; x <= 5; x++) {
-  // 0 to 5 increament
-  for (var j = 0; j <= 5; j++) {
-    //nested for loop
-    console.log("First loop: " + x + " - IL:" + j);
-  }
-}
+// for (let x = 0; x <= 5; x++) {
+//   // 0 to 5 increament
+//   for (var j = 0; j <= 5; j++) {
+//     //nested for loop
+//     console.log("First loop: " + x + " - IL:" + j);
+//   }
+// }
 
-//== length key word ==\\
+// //== length keyword ==\\
 
-var user = ["James", "Brian", "Lucas"];
+// var user = ["James", "Brian", "Lucas"];
 
-for (var i = 0; i < user.length; i++) {
-  console.log(user[i]);
-}
+// for (var i = 0; i < user.length; i++) {
+//   console.log(user[i]);
+// }
 
-//== while loop ==\\
+// //== while loop ==\\
 
-var x = 2;
+// var x = 2;
 
-while (x <= 2) {
-  console.log(x);
-  x++; // break it or increament
-  // break
-}
+// while (x <= 2) {
+//   console.log(x);
+//   x++; // break it or increament
+//   // break
+// }
 
-var logged = true;
-var i = 0; // 1
+// var logged = true;
+// var i = 0; // 1
 
-while (logged) {
-  if (i == 3) {
-    logged = false;
-  }
-  console.log(i);
-  i++;
-}
+// while (logged) {
+//   if (i == 3) {
+//     logged = false;
+//   }
+//   console.log(i);
+//   i++;
+// }
 
-var list = ["abc", "def", "ghi", "jkl", "mno", "pqr", "stu"];
+// var list = ["abc", "def", "ghi", "jkl", "mno", "pqr", "stu"];
 
-for (let i = 0; i < list.length; i++) {
-  var openList = list[i];
+// for (let i = 0; i < list.length; i++) {
+//   var openList = list[i];
 
-  console.log(openList);
-}
+//   console.log(openList);
+// }
 
 // =====================parsing data====================\\
 
 //The JavaScript JSON.parse() takes a JSON string and
 // transforms it into a JavaScript object.
 
-var json = '{ "firstName":"ASHU", "lastName":"BHATI", "studentCode":7 }';
-var student = JSON.parse(json);
+// var json = '{ "firstName":"ASHU", "lastName":"BHATI", "studentCode":7 }';
+// var student = JSON.parse(json);
 
-console.log(student.firstName + " " + student.lastName);
+// console.log(student.firstName + " " + student.lastName);
 
-var dummy = '["c++","java","python" ,"ruby","perl"]';
+// var dummy = '["c++","java","python" ,"ruby","perl"]';
 
-var cons = JSON.parse(dummy);
+// var cons = JSON.parse(dummy);
 
-console.log(cons);
+// console.log(cons);
+
+
+// var person = { fname: "Nick", lname: "Jonas", age: 26 };
+var person = [ 'kj','sdfs','sdfsd','sfsdf']
+for (var x in person) {
+    console.log( person[x])
+}
+
+// for( var i = 0; i = elements.length; i++ ) {
+//   elements[i].style.color = 'green'
+// }
