@@ -61,13 +61,55 @@
 
 // console.log(cons);
 
-
-// var person = { fname: "Nick", lname: "Jonas", age: 26 };
-var person = [ 'kj','sdfs','sdfsd','sfsdf']
-for (var x in person) {
-    console.log( person[x])
-}
-
 // for( var i = 0; i = elements.length; i++ ) {
 //   elements[i].style.color = 'green'
 // }
+
+// var person = [
+//   { fname: "Nick", lname: "Jonas", age: 40},
+//   { fname: "jacky", lname: "Jonas", age: 18 },
+//   { fname: "James", lname: "Jonas", age: 20 },
+//   { fname: "Bond", lname: "Jonas", age: 30 },
+//   { fname: "Atom", lname: "Jonas", age: 2 },
+//   { fname: "Jason", lname: "Jonas", age: 16 },
+//   { fname: "Johnathan", lname: "Jonas", age: 36 },
+//   { fname: "Chris", lname: "Jonas", age: 26 }
+// ];
+// // var person = [ 'kj','sdfs','sdfsd','sfsdf']
+// for (var x in person) {
+//   console.log(person[x]);
+
+// }
+
+var button = document.getElementById("submit");
+
+button.addEventListener("click", onSubmit);
+
+function onSubmit() {
+  var name = document.getElementById("name").value;
+
+  var newUser = new newUser()
+   
+    newUser.name = String;
+    
+    newUser.name == name
+
+
+
+ console.log(newUser.name)
+
+  // var users = [{"name":"sai"}];
+
+  // if (users.name == name) {
+  //   console.log("user Already exists ");
+  // } else if (name == "") {
+  //   console.log("please enter the vale ");
+  // } else {
+  //   users.push(name);
+
+  //   console.log(users);
+
+  //   // button.removeEventListener("click", onSubmit);
+  //   console.log("Cong user created Successfully ");
+  // }
+}
