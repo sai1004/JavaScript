@@ -3,28 +3,28 @@
 
 var string = 'To live Like a King work Hard like slave'
 
-console.log(string.split(' '))
-console.log(string.slice(0,8))
-console.log(string.replace('king','\n')) // \n breaks the line
-console.log(string.charAt(0))
-console.log(string.charCodeAt('To'))
-console.log(string.concat(' \n this is secondary string'))
-console.log(string.indexOf('live'))
-console.log(string.lastIndexOf('v'))
-// console.log(string.length(''))
-// console.log(string.localeCompare())
-console.log(string.search('l'))
-console.log(string.startsWith('To'))
-console.log(string.startsWith('To live'))
-console.log(string.endsWith('e'))
+// console.log(string.split(' '))
+// console.log(string.slice(0,8))
+// console.log(string.replace('king','\n')) // \n breaks the line
+// console.log(string.charAt(0))
+// console.log(string.charCodeAt('To'))
+// console.log(string.concat(' \n this is secondary string'))
+// console.log(string.indexOf('live'))
+// console.log(string.lastIndexOf('v'))
+// // console.log(string.length(''))
+// // console.log(string.localeCompare())
+// console.log(string.search('l'))
+// console.log(string.startsWith('To'))
+// console.log(string.startsWith('To live'))
+// console.log(string.endsWith('e'))
 
 
 
-var str = "hey JudE";
-var re = /[A-Z]/g;
-var re2 = /[.]/g;
-console.log(str.search(re)); // returns 4, which is the index of the first capital letter "J"
-console.log(str.search(re2)); // returns -1 cannot find '.' dot punctuation
+// var str = "hey JudE";
+// var re = /[A-Z]/g;
+// var re2 = /[.]/g;
+// console.log(str.search(re)); // returns 4, which is the index of the first capital letter "J"
+// console.log(str.search(re2)); // returns -1 cannot find '.' dot punctuation
 
 
 // var worldString = 'Hello, world';
