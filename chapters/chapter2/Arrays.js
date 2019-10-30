@@ -1,18 +1,23 @@
+var newCompany = [];
+
 const companies = [
-  { name: "Company One", category: "Finance", start: 1981, end: 2004 },
-  { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
-  { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
-  { name: "Company Four", category: "Retail", start: 1989, end: 2010 },
-  { name: "Company Five", category: "Technology", start: 2009, end: 2014 },
-  { name: "Company Six", category: "Finance", start: 1987, end: 2010 },
-  { name: "Company Seven", category: "Auto", start: 1986, end: 1996 },
-  { name: "Company Eight", category: "Technology", start: 2011, end: 2016 },
-  { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
+  // { name: "Company One", category: "Finance", start: 1981, end: 2004 },
+  // { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
+  // { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
+  // { name: "Company Four", category: "Retail", start: 1989, end: 2010 },
+  // { name: "Company Five", category: "Technology", start: 2009, end: 2014 },
+  // { name: "Company Six", category: "Finance", start: 1987, end: 2010 },
+  // { name: "Company Seven", category: "Auto", start: 1986, end: 1996 },
+  // { name: "Company Eight", category: "Technology", start: 2011, end: 2016 },
+  { name: "Company Nine", category: "Retail", start: 1981, end: "" },
+  { name: "Company Nine", category: "Retail", start: "", end: 123 },
+  { name: "Company Nine", category: "", start: 1981, end: 345 },
+  { name: "", category: "Retail", start: 1981, end: 345 },
+  { name: "Company Nine", category: "Retail", start: 1981, end: 55 },
+  { name: "Company Nine", category: "Retail", start: 1981, end: 34 }
 ];
 
 const ages = [33, 12, 20, 16, 5, 21, 44, 61, 13, 15, 45, 25, 64, 32, 54];
- 
-
 
 // Normal for loop
 //   for ( i = 0; i < companies.length; i++) {
@@ -21,19 +26,41 @@ const ages = [33, 12, 20, 16, 5, 21, 44, 61, 13, 15, 45, 25, 64, 32, 54];
 
 // For Each Method
 
+var tem = { ...companies }
+console.table(tem)
 // companies.forEach(function(company) {
-//   console.log(company);
+//   // console.log(company);
+//   if (
+//     company.end == "" ||
+//     company.name == "" ||
+//     company.category == "" ||
+//     company.start == ""
+//   ) {
+//     return console.log("please enter the Fields");
+//   } else {
+//     console.table(company);
+//     newCompany.push(company);
+//   }
+// });
+
+// console.log(newCompany);
+
+// companies.map((item, index) => {
+//   if (Object.keys(item) == "") {
+//     return console.log("dfsd");
+//   } else {
+//     console.log(index, item);
+//   }
 // });
 
 // normal for loop filter
 
-for (i = 0; i < ages.length; i++) {
-  if (ages[i] <= 21) {
-    console.log(ages[i]);
-  }
+// for (i = 0; i < ages.length; i++) {
+//   if (ages[i] <= 21) {
+//     console.log(ages[i]);
+//   }
 
-  
-}
+// }
 
 // filter Method
 
