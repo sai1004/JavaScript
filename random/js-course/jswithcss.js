@@ -1,7 +1,7 @@
 // https://dev.to/karataev/set-css-styles-with-javascript-3nl5
 // https://developers.google.com/web/updates/2019/02/constructable-stylesheets
 // making wheel scroll fast
-https://developers.google.com/web/updates/2019/02/scrolling-intervention
+// https://developers.google.com/web/updates/2019/02/scrolling-intervention
 // 1. Inline styles
 
 // document.getElementById('target').style.color = 'green';
@@ -28,9 +28,54 @@ https://developers.google.com/web/updates/2019/02/scrolling-intervention
 // It's now possible to create CSSStyleSheet object from JavaScript.
 
 // Create our shared stylesheet:
-const sheet = new CSSStyleSheet();
-sheet.replaceSync('#target {color: blue}');
+// const sheet = new CSSStyleSheet();
+// sheet.replaceSync('#target {color: blue}');
 
-// Apply the stylesheet to a document:
-document.adoptedStyleSheets = [sheet];
-// This option is only valid for Chrome, so use with caution.
+// // Apply the stylesheet to a document:
+// document.adoptedStyleSheets = [sheet];
+// // This option is only valid for Chrome, so use with caution.
+
+window.addEventListener('keypress', function (e) {
+    if (e.keyCode !== 13) {
+     let chars= [];
+     chars.push(e.key);
+     console.log(chars)
+    }
+  }, false);
+
+// window.addEventListener(
+//   "keyup",
+//   function(e) {
+//     if (e.keyCode === 13) {
+//       container.textContent = chars.join("");
+//       chars = [];
+//     }
+//   },
+//   false
+// );
+
+
+// function keysStrokeListen() {
+//     function contentLoaded () {    
+//             var chars = [],
+//             container = document.getElementById('container');
+
+//             window.addEventListener('keypress', function (e) {
+//             if (e.keyCode !== 13) {
+//                         chars.push(e.key);
+//             }
+//             }, false);
+
+//             window.addEventListener('keyup', function (e) {
+//                 if (e.keyCode === 13) {
+//                     container.textContent = chars.join('');
+//             chars = [];
+//                    }
+//             }, false);
+//     }
+
+//     window.addEventListener('DOMContentLoaded', contentLoaded, false); 
+//     contentLoaded()
+// };
+
+// console.log(keysStrokeListen())
