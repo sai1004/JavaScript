@@ -59,6 +59,9 @@ console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”,
 // // })
 
 
+[1,2,3].map((i)=> 1+5)
+
+
 // function sum (a, b) {
 //   return Promise(function (resolve, reject) { 
 //     setTimeout(function () {                                       // send the response after 1 second
