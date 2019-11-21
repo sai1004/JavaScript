@@ -11,18 +11,16 @@
 // ];
 
 // const ages = [33, 12, 20, 16, 5, 21, 44, 61, 13, 15, 45, 25, 64, 32, 54];
- 
+
 // 1. Remove duplicates from an array
-var fruits = ['banana', 'apple', 'orange', 'watermelon', 'apple', 'orange', 'grape', 'apple'];
+// var fruits = ['banana', 'apple', 'orange', 'watermelon', 'apple', 'orange', 'grape', 'apple'];
 
-// First method
-var uniqueFruits = Array.from(new Set(fruits));
-console.log(uniqueFruits); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
-// Second method
-var uniqueFruits2 = [ new Set(fruits)];
-console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
-
-
+// // First method
+// var uniqueFruits = Array.from(new Set(fruits));
+// console.log(uniqueFruits); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
+// // Second method
+// var uniqueFruits2 = [ new Set(fruits)];
+// console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
 
 // var tem = { ...companies } // Es 6 itterator
 // console.table(tem)
@@ -74,7 +72,6 @@ console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”,
 //     console.log(ages[i]);
 //   }
 
-  
 // }
 
 // // filter Method
@@ -87,12 +84,10 @@ console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”,
 
 // // })
 
-
-[1,2,3].map((i)=> 1+5)
-
+[1, 2, 3].map(i => 1 + 5);
 
 // function sum (a, b) {
-//   return Promise(function (resolve, reject) { 
+//   return Promise(function (resolve, reject) {
 //     setTimeout(function () {                                       // send the response after 1 second
 //       if (typeof a !== "number" || typeof b !== "number") {        // testing input types
 //         return reject(new TypeError("Inputs must be numbers"));
@@ -146,13 +141,12 @@ console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”,
 
 // console.table(longGreetings)
 
-var paragraph =
-  'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.';
+// var paragraph =
+//   'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.';
 
-var words = paragraph.split(' ')
+// var words = paragraph.split(' ')
 
-console.log(words.length)
-
+// console.log(words.length)
 
 // var captial = /[A-Z]/g;
 
@@ -163,3 +157,10 @@ console.log(words.length)
 // var smal = paragraph.match(small)
 
 // console.log('Small letters are: ', )
+
+let p = ["a", "b", "c", undefined, "g", undefined];
+
+var g = p.filter(item => {
+  return item !== undefined;
+});
+console.log(g);
