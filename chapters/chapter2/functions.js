@@ -5,23 +5,24 @@ function add(x, y) {
   return x + y;
 }
 
-console.log(add(2, 5));
+// console.log(add(2, 5));
 // changing function name
 const me = add;
 
 me(3, 3);
-console.log(me(3, 3));
+// console.log(me(3, 3));
 
 const you = add;
 
 you(5, 5);
-console.log(you(2, 2));
+// console.log(you(2, 2));
 
 function addFive(x, addReference) {
+         // call back
   return addReference(5, x);
 }
 
-console.log(addFive(10, you));
+console.log(addFive(1, you));
 
 // function add(a, b , callback){
 //    document.write(`The sum of ${a} and ${b} is ${a+b}.` +"<br>");
