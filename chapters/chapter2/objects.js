@@ -14,3 +14,10 @@ console.log(Object.seal(car));
 car.name = "Swift";
 // console.log(Object.values(car));
 console.log(car.name);
+
+try {
+  const myVar = "dlskfjsdf";
+  myVar = 565;
+} catch (err) {
+  throw "Somthing Worng";
+}
