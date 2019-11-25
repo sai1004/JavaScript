@@ -31,3 +31,12 @@ var obj = { colors, nums };
 
 obj.colors[2] = "black";
 console.log(obj);
+
+const pets = [
+  { type: "Dog", name: "Max" },
+  { type: "Cat", name: "Karl" },
+  { type: "Dog", name: "Tommy" }
+];
+
+pet = pets.find(pet => pet.type === "Dog" && pet.name === "Tommy");
+console.log(pet);
