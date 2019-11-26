@@ -36,3 +36,13 @@ try {
 if (car.name == "" || car.name == null) {
   console.log("enter the value");
 }
+
+var person = { fname: "Nick", lname: "Jonas", age: 26 };
+for (var x in person) {
+  console.log("keys:", x);
+  console.log("values:", person[x]);
+
+  // console.log(x + ": " + person[x]);
+}
+
+console.log(JSON.stringify(person));

@@ -18,7 +18,7 @@ you(5, 5);
 // console.log(you(2, 2));
 
 function addFive(x, addReference) {
-         // call back
+  // call back
   return addReference(5, x);
 }
 
@@ -36,3 +36,19 @@ console.log(addFive(1, you));
 //    // Calling add() function
 
 // add(5,6,disp);
+
+function randomStr(len, id) {
+  var ans = "";
+  for (var i = len; i > 0; i--) {
+    ans += id[Math.floor(Math.random() * id.length)];
+  }
+  return ans;
+}
+
+function newId() {
+  let uid = randomStr(20, /[a-z]/);
+
+  return uid;
+}
+
+console.log(newId());
