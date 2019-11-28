@@ -41,3 +41,7 @@ for (var x in person) {
 }
 
 console.log(JSON.stringify(person));
+
+let set = new Set(["a", "b", "c"]);
+
+console.log(set);

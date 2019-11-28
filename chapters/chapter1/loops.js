@@ -2,16 +2,19 @@
 
 // print square of array of the elements
 
-var lst =  [2,3,4,5,6,7,8,9]
+var lst = [2, 3, 4, 5, 6, 7, 8, 9];
 
-for( let i = 0; i < lst.length; i++ ) {
-    x = lst[i] ** 2
-    console.log(x)
+for (let i = 0; i < lst.length; i++) {
+  x = lst[i] ** 2;
+  console.log(x);
 }
 
+// of for loop
+for (let value of ["a", "b", "c"]) {
+  console.log(value);
+}
 
-
-
+console.log([..."abc"]);
 
 // ================== While loops ======================= //
 
@@ -24,7 +27,6 @@ while (count <= 10) {
 
 // ================== do While loops ======================= //
 
-
 var text = "";
 var i = 0;
 do {
@@ -34,5 +36,4 @@ do {
 
 console.log(text);
 
- 
-
+console.log(([a, b, c] = new Set(["a", "b", "c"])));
