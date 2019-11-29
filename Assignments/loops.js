@@ -28,25 +28,13 @@ let list = [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13, 15, 17];
 
 // console.log(sumOfList);
 
-function findMissingNumbers(array) {
-  const arraySize = array.length;
-  const missedNum = [];
-  let i = 0;
-  let j = array[0];
-  let jSize = array[arraySize - 1];
-  while (j < jSize) {
-    array[i] === j ? (i += 1) : missedNum.push(j);
-    j++;
-  }
-  return missedNum;
-}
+/*
+  let ip = ["192.168.1.0"];
 
-console.log(findMissingNumbers(list));
 
-function range(start, stop) {
-  var count = [];
-  for (var i = start; i <= stop; i++) {
-    count.push(i);
+for (i = 0; i < ip.length; i++) {
+  for (j = 0; j < 256; j++) {
+    console.log(ip[i].slice(0, 10) + "." + j);
   }
-  return count;
 }
+*/

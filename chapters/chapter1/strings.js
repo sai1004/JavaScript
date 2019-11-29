@@ -1,7 +1,4 @@
-
- 
-
-var string = 'To live Like a King work Hard like slave'
+var string = "To live Like a King work Hard like slave";
 
 // console.log(string.split(' '))
 // console.log(string.slice(0,8))
@@ -18,14 +15,11 @@ var string = 'To live Like a King work Hard like slave'
 // console.log(string.startsWith('To live'))
 // console.log(string.endsWith('e'))
 
-
-
 // var str = "hey JudE";
 // var re = /[A-Z]/g;
 // var re2 = /[.]/g;
 // console.log(str.search(re)); // returns 4, which is the index of the first capital letter "J"
 // console.log(str.search(re2)); // returns -1 cannot find '.' dot punctuation
-
 
 // var worldString = 'Hello, world';
 
@@ -42,5 +36,3 @@ var string = 'To live Like a King work Hard like slave'
 // let array = [...str.matchAll(regexp)];
 
 // console.log(array[0]);
-
-
