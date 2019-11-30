@@ -23,7 +23,7 @@ function findMissingNumbers(array) {
   return missedNum;
 }
 
-console.log(findMissingNumbers(list));
+// console.log(findMissingNumbers(list));
 
 /* Capitalize the letter of the str */
 
@@ -58,13 +58,12 @@ getStr.forEach(item => {
 function randomStr(len, id) {
   var str = "";
   for (var i = len; i > 0; i--) {
-    console.log(i);
-    str += id[Math.floor(Math.random() * id.length)];
+    str += id[Math.floor(Math.random() * id.length)]; // alternate of math.floor is ~~ (VALUE)
   }
   return str;
 }
 
-console.log(randomStr(10, "kjsdfh458645kdjfgh"));
+console.log(randomStr(20, "kjsdfh458645kdjfgh"));
 
 function uid() {
   let regx = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";

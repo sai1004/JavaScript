@@ -10,3 +10,6 @@
 
 
   https://www.geeksforgeeks.org/searching-algorithms/#problems  
+
+
+  https://blog.jscrambler.com/12-extremely-useful-hacks-for-javascript/

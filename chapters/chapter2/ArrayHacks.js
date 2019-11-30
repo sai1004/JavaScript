@@ -32,3 +32,10 @@ console.log(typeof myVar);
 var arrr = [1, 2];
 
 console.log(Math.round(3.2));
+
+// Shuffling array’s elements
+
+var list = [1, 2, 3];
+console.log(list.sort(function() {
+    return Math.random() - 0.5
+})); // [2,1,3]
