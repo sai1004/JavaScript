@@ -28,6 +28,8 @@ let list = [1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 13, 15, 17];
 
 // console.log(sumOfList);
 
+/* Q) Find missing number in array ? */
+
 function findMissingNumbers(array) {
   const arraySize = array.length;
   const missedNum = [];
@@ -43,6 +45,8 @@ function findMissingNumbers(array) {
 
 console.log(findMissingNumbers(list));
 
+/* Q) Write a Range function That takes start and stop function ? */
+
 function range(start, stop) {
   var count = [];
   for (var i = start; i <= stop; i++) {
@@ -50,3 +54,13 @@ function range(start, stop) {
   }
   return count;
 }
+
+function square(arr) {
+  let i = [];
+  arr.forEach(item => {
+    i.push(item ** 2);
+  });
+  return i;
+}
+
+console.log(square(list));
