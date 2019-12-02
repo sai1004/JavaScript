@@ -18,16 +18,16 @@
 
 // quadratic(15);
 
-// function cubic(n) {
-//   for (let i = 0; i < n; i++) {
-//     console.log("this is i: ", i);
-//     for (let j = i; j < n; j++) {
-//       console.log("this is square of i:", j);
-//       for (let k = j; k < n; k++) {
-//         console.log("this is cube of i:", k);
-//       }
-//     }
-//   }
-// }
+function cubic(n) {
+  for (let i = 0; i < n; i++) {
+    console.log("this is i: ", i);
+    for (let j = i; j < n; j++) {
+      console.log("this is square of i:", j);
+      for (let k = j; k < n; k++) {
+        console.log("this is {cube} of i:", k);
+      }
+    }
+  }
+}
 
-// cubic(10);
+cubic(10);
