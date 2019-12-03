@@ -1,4 +1,4 @@
-let x = false;
+// let x = false;
 
 // if (x == true) {
 //   return console.log("true");
@@ -6,14 +6,15 @@ let x = false;
 //   return console.log("false");
 // }
 
-var a = 50;
+// var a = 50;
 
-var b = 50;
+// var b = 50;
 
-if (a < b) {
-  console.log("a is less than b");
-} else if (a > b) {
-  console.log("a is greater than b");
-} else {
-  console.log("a = b");
-}
+// if (a < b) {
+//   console.log("a is less than b");
+// } else if (a > b) {
+//   console.log("a is greater than b");
+// } else {
+//   console.log("a = b");
+// }
+

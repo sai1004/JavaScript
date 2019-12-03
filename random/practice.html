@@ -16,8 +16,6 @@
 
     <!-- ========================================================================= -->
 
-   
-
     <script>
       var button = document
         .getElementById("button")
@@ -36,6 +34,12 @@
 
         // document.getElementById("center").innerHTML = "hey you there!!";
       }
+
+      let newWindow = open("/", "example", "width=700,height=600");
+      newWindow.onload = function() {
+        newWindow.open();
+        alert(newWindow.closed); // true
+      };
     </script>
   </body>
 </html>
