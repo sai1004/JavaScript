@@ -36,3 +36,9 @@ var string = "To live Like a King work Hard like slave";
 // let array = [...str.matchAll(regexp)];
 
 // console.log(array[0]);
+
+// tricky type casting
+
+var a = "101" - 1; // o/p: 100
+
+console.log(a);
