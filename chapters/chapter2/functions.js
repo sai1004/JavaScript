@@ -1,28 +1,28 @@
 // https://codeforgeek.com/asynchronous-programming-in-node-js/
 // ===============CallBack Functions ========================== //
 
-function add(x, y) {
-  return x + y;
-}
+// function add(x, y) {
+//   return x + y;
+// }
 
-// console.log(add(2, 5));
-// changing function name
-const me = add;
+// // console.log(add(2, 5));
+// // changing function name
+// const me = add;
 
-me(3, 3);
-// console.log(me(3, 3));
+// me(3, 3);
+// // console.log(me(3, 3));
 
-const you = add;
+// const you = add;
 
-you(5, 5);
-// console.log(you(2, 2));
+// you(5, 5);
+// // console.log(you(2, 2));
 
-function addFive(x, addReference) {
-  // call back
-  return addReference(5, x);
-}
+// function addFive(x, addReference) {
+//   // call back
+//   return addReference(5, x);
+// }
 
-console.log(addFive(1, you));
+// console.log(addFive(1, you));
 
 // function add(a, b , callback){
 //    document.write(`The sum of ${a} and ${b} is ${a+b}.` +"<br>");
@@ -37,18 +37,31 @@ console.log(addFive(1, you));
 
 // add(5,6,disp);
 
-function randomStr(len, id) {
-  var ans = "";
-  for (var i = len; i > 0; i--) {
-    ans += id[Math.floor(Math.random() * id.length)];
-  }
-  return ans;
-}
+// function randomStr(len, id) {
+//   var ans = "";
+//   for (var i = len; i > 0; i--) {
+//     ans += id[Math.floor(Math.random() * id.length)];
+//   }
+//   return ans;
+// }
 
-function newId() {
-  let uid = randomStr(20, /[a-z]/);
+// function newId() {
+//   let uid = randomStr(20, /[a-z]/);
 
-  return uid;
-}
+//   return uid;
+// }
 
-console.log(newId());
+// console.log(newId());
+
+const callbackFn = (firstName, callback) => {
+  setTimeout(() => {
+    if (!firstName) return callback(new Error(" FirstName is not passed in! "));
+
+    const fullName = `${firstName} Doe`;
+
+    return callback(fullName);
+  }, 3000);
+};
+
+
+console.log(callbackFn('jane'))

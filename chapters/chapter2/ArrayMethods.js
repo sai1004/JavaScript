@@ -32,6 +32,8 @@ var obj = { colors, nums };
 obj.colors[2] = "black";
 console.log(obj);
 
+
+// finding objs in array
 const pets = [
   { type: "Dog", name: "Max" },
   { type: "Cat", name: "Karl" },
