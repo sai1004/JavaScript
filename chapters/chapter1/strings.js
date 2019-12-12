@@ -1,6 +1,9 @@
 var string = "To live Like a King work Hard like slave";
 
+
 // console.log(string.split(' '))
+
+
 // console.log(string.slice(0,8))
 // console.log(string.replace('king','\n')) // \n breaks the line
 // console.log(string.charAt(0))
@@ -36,9 +39,8 @@ var string = "To live Like a King work Hard like slave";
 // let array = [...str.matchAll(regexp)];
 
 // console.log(array[0]);
-
-// tricky type casting
-
+ 
+/* tricky type casting */
 var a = "101" - 1; // o/p: 100
 
 console.log(a);

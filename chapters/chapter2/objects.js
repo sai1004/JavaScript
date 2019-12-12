@@ -33,6 +33,7 @@ try {
   myVar = 565;
 } catch (err) {
   throw "Somthing Worng";
+}
 if (car.name == "" || car.name == null) {
   console.log("enter the value");
 }
