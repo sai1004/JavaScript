@@ -2,17 +2,27 @@
 
 // print square of array of the elements
 
-var lst = [2, 3, 4, 5, 6, 7, 8, 9];
+var list = [2, 3, 4, 5, 6, 7, 8, 9];
 
-for (let i = 0; i < lst.length; i++) {
-  x = lst[i] ** 2;
-  console.log(x);
+for (let i = 0; i < list.length; i++) {
+  console.log(`square of [${list[i]}] is --> `, list[i] ** 2);
 }
 
 // of for loop
+
+var colors = ["red", "green", "blue", "yellow"];
+
+for (color of colors) {
+  console.log("-->", color);
+}
+
 for (let value of ["a", "b", "c"]) {
   console.log(value);
 }
+
+// converting array to object
+
+console.log({ ...colors });
 
 console.log([..."abc"]);
 

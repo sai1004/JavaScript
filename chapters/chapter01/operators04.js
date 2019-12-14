@@ -20,7 +20,9 @@ a != c;
 
 /* Assignment oprator */
 
-c += b; // similar to c + c = b
+//  =, +=, -=, *=, /=, %=, //=, **=
+
+c += b; // similar to c = c + b
 
 b -= a;
 
@@ -28,12 +30,20 @@ b -= a;
 
 var Bike = { make: "Honda", model: "CLIQ", year: 2018 };
 
-// in operator
+/* in operator */
 console.log("make" in Bike); //
 // Output:
 // true
 
-// delete
+/* of Operator */
+
+colors = ["red", "green", "blue", "yellow"];
+
+for (color of colors) {
+  console.log("-->", color);
+}
+
+/* delete */
 
 var Bike = { Company1: "Honda", Company2: "Hero", Company3: "Royal Enfield" };
 delete Bike.Company1;
@@ -41,12 +51,12 @@ console.log(Bike); //
 // Output:
 // { Company2: 'Hero', Company3: 'Royal Enfield' }
 
-// typeof
+/* typeof  */
 
 let message = "Welcome to " + "JavaTpoint";
 console.log(typeof message); //
 
-// instanceof
+/* instanceof */
 
 let arr = [1, 2, 3];
 console.log(arr instanceof Array); // true
