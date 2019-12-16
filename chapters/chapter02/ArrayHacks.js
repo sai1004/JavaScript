@@ -18,9 +18,11 @@ console.log({ a, b, c });
 
 var d = ["a", "b", "c", "d", "e", "f"];
 var e = ["g", "h", "i", "j", "k", "l"];
+
 d.shift();
 e.pop();
 d.includes("a");
+
 var f = [].concat(d, e); // new way of concating
 var g = [...d, ...e];
 console.log(f);

@@ -1,90 +1,59 @@
-// const companies = [
-//   { name: "Company One", category: "Finance", start: 1981, end: 2004 },
-//   { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
-//   { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
-//   { name: "Company Four", category: "Retail", start: 1989, end: 2010 },
-//   { name: "Company Five", category: "Technology", start: 2009, end: 2014 },
-//   { name: "Company Six", category: "Finance", start: 1987, end: 2010 },
-//   { name: "Company Seven", category: "Auto", start: 1986, end: 1996 },
-//   { name: "Company Eight", category: "Technology", start: 2011, end: 2016 },
-//   { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
-// ];
-
-// const ages = [33, 12, 20, 16, 5, 21, 44, 61, 13, 15, 45, 25, 64, 32, 54];
+const companies = [
+  { name: "Company One", category: "Finance", start: 1981, end: 2004 },
+  { name: "Company Two", category: "Retail", start: 1992, end: 2008 },
+  { name: "Company Three", category: "Auto", start: 1999, end: 2007 },
+  { name: "Company Four", category: "Retail", start: 1989, end: 2010 },
+  { name: "Company Five", category: "Technology", start: 2009, end: 2014 },
+  { name: "Company Six", category: "Finance", start: 1987, end: 2010 },
+  { name: "Company Seven", category: "Auto", start: 1986, end: 1996 },
+  { name: "Company Eight", category: "Technology", start: 2011, end: 2016 },
+  { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
+];
 
 // 1. Remove duplicates from an array
-// var fruits = ['banana', 'apple', 'orange', 'watermelon', 'apple', 'orange', 'grape', 'apple'];
+var fruits = [
+  "banana",
+  "apple",
+  "orange",
+  "watermelon",
+  "apple",
+  "orange",
+  "grape",
+  "apple"
+];
 
-// // First method
-// var uniqueFruits = Array.from(new Set(fruits));
-// console.log(uniqueFruits); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
-// // Second method
-// var uniqueFruits2 = [ new Set(fruits)];
-// console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
+// First method
+var uniqueFruits = Array.from(new Set(fruits));
+console.log(uniqueFruits); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
 
-// var tem = { ...companies } // Es 6 itterator
-// console.table(tem)
-// console.assert(tem)
-// console.countReset(tem)
+// Second method
+var uniqueFruits2 = [new Set(fruits)];
+console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
 
-// companies.forEach(function(company) {
-//   // console.log(company);
-//   if (
-//     company.end == "" ||
-//     company.name == "" ||
-//     company.category == "" ||
-//     company.start == ""
-//   ) {
-//     return console.log("please enter the Fields");
-//   } else {
-//     console.table(company);
-//     newCompany.push(company);
-//   }
-// });
+var company = { ...companies }; // Es 6 itterator
+console.table(company);
 
-// console.log(newCompany);
+console.log(newCompany);
 
-// companies.map((item, index) => {
-//   if (Object.keys(item) == "") {
-//     return console.log("dfsd");
-//   } else {
-//     console.log(index, item);
-//   }
-// });
-// // to change the index value of array
-// console.log(companies[3] =  { name: "Company Six", category: "Finance", start: 1987, end: 2010 })
+companies.map((item, index) => {
+  if (Object.keys(item) == "") {
+    return console.log("dfsd");
+  } else {
+    console.log(index, item);
+  }
+});
+// to change the index value of array
+console
+  .log(
+    (companies[3] = {
+      name: "Company Six",
+      category: "Finance",
+      start: 1987,
+      end: 2010
+    })
+  )
 
-// // Normal for loop
-// //   for ( i = 0; i < companies.length; i++) {
-// //     console.log(companies[i])
-// //   }
-
-// // For Each Method
-
-// // companies.forEach(function(company) {
-// //   console.log(company);
-// // });
-
-// // normal for loop filter
-
-// for (i = 0; i < ages.length; i++) {
-//   if (ages[i] <= 21) {
-//     console.log(ages[i]);
-//   }
-
-// }
-
-// // filter Method
-
-// // ages.filter(function(ages) {
-// //     if ( ages <= 21) {
-// //         return true;
-// //     }
-// //     console.log(ages)
-
-// // })
-
-[1, 2, 3].map(i => 1 + 5);
+  [(1, 2, 3)].map(i => 1 + 5);
 
 // function sum (a, b) {
 //   return Promise(function (resolve, reject) {
@@ -158,9 +127,9 @@
 
 // console.log('Small letters are: ', )
 
-let p = ["a", "b", "c", undefined, "g", undefined];
+let allTypeData = ["a", "b", "c", undefined, "g", undefined];
 
-var g = p.filter(item => {
+var removeUndefinedVal = allTypeData.filter(item => {
   return item !== undefined;
 });
-console.log(g);
+console.log(removeUndefinedVal);
