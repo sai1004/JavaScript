@@ -18,3 +18,13 @@ console.log(firstName, lastName);
 let localVar = "This var is block level Scope.";
 
 console.log(localVar);
+
+
+const html = `
+  <div>
+    <h2>${name}</h2>
+    <p>${hello}</p>
+  </div>
+`;
+
+console.log(html);

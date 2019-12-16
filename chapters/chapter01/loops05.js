@@ -2,10 +2,10 @@
 
 // print square of array of the elements
 
-var list = [2, 3, 4, 5, 6, 7, 8, 9];
+var arr = [2, 3, 4, 5, 6, 7, 8, 9];
 
-for (let i = 0; i < list.length; i++) {
-  console.log(`square of [${list[i]}] is --> `, list[i] ** 2);
+for (let i = 0; i < arr.length; i++) {
+  console.log(`square of [${arr[i]}] is --> `, arr[i] ** 2);
 }
 
 // of for loop
