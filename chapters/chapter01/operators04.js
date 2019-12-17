@@ -1,15 +1,11 @@
-a = 1;
+var a = 10;
 
-b = 2;
+var b = 20;
 
-c = 3;
+var c = 10;
 
 //  """"""""""""" Arithmetic Oprator """""""""""""""
 //   Operators: + ,- ,*, / ,~~, **, %
-
-a = 10;
-b = 20;
-c = 10;
 
 console.log(a + b);
 console.log(a - b);
@@ -44,11 +40,11 @@ console.log(a != c);
 
 //  =, +=, -=, *=, /=, %=, ~~=, **=
 
-console.log(c += b) // similar to c = c + b
+console.log((c += b)); // similar to c = c + b
 
-console.log(b -= a)
+console.log((b -= a));
 
-console.log(a *= b)
+console.log((a *= b));
 
 /* """"""""""""""" Type Operators """"""""""""""" */
 

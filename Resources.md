@@ -15,3 +15,5 @@ https://blog.jscrambler.com/12-extremely-useful-hacks-for-javascript/
 https://www.robinwieruch.de/javascript-naming-conventions
 
 https://codeforgeek.com/asynchronous-programming-in-node-js/
+
+https://hackernoon.com/javascript-hacks-for-es6-hipsters-67d633ce8ace

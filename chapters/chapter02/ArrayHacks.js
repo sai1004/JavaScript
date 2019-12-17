@@ -1,6 +1,4 @@
-// https://hackernoon.com/javascript-hacks-for-es6-hipsters-67d633ce8ace
-
-// Using Array Destructuring to swap values
+/* !!!!!!!!!!!!!!!!! Using Array Destructuring to swap values !!!!!!!!!!!!!!!!! */
 
 // let a = "world";
 // let b = "hello";
@@ -10,11 +8,13 @@
 // console.log(a);
 // console.log(b);
 
-// Debugging
+/* """""""""""""""""" Debugging """""""""""""""""" */
 const a = 5;
 const b = 6;
 const c = 7;
 console.log({ a, b, c });
+
+/* """""""""""""""""" concating  """""""""""""""""" */
 
 var d = ["a", "b", "c", "d", "e", "f"];
 var e = ["g", "h", "i", "j", "k", "l"];
@@ -35,9 +35,11 @@ var arrr = [1, 2];
 
 console.log(Math.round(3.2));
 
-// Shuffling array’s elements
+/* """""""""""""""""" Shuffling array’s elements  """""""""""""""""" */
 
 var list = [1, 2, 3];
-console.log(list.sort(function() {
-    return Math.random() - 0.5
-})); // [2,1,3]
+console.log(
+  list.sort(function() {
+    return Math.random() - 0.5;
+  })
+); // [2,1,3]

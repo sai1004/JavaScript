@@ -96,7 +96,7 @@ var sum = nums.reduce((acc, val) => {
 
 console.log(sum);
 
-/* finding objs in array */
+/* """"""""""""""" finding objs in array """"""""""""""" */
 
 const pets = [
   { type: "Dog", name: "Max" },

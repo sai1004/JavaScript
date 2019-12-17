@@ -1,6 +1,6 @@
-// ===================== for loops ====================//
+/* !!!!!!!!!!!!!!!!! for loops !!!!!!!!!!!!!!!!! */
 
-// print square of array of the elements
+/* """"""""""""""""""  print square of array of the elements """""""""""""""""" */
 
 var arr = [2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -8,7 +8,7 @@ for (let i = 0; i < arr.length; i++) {
   console.log(`square of [${arr[i]}] is --> `, arr[i] ** 2);
 }
 
-// of for loop
+/* """"""""""""""""""  of for loop """""""""""""""""" */
 
 var colors = ["red", "green", "blue", "yellow"];
 
@@ -20,13 +20,13 @@ for (let value of ["a", "b", "c"]) {
   console.log(value);
 }
 
-// converting array to object
+/*  """""""""""""""""" converting array to object """""""""""""""""" */
 
 console.log({ ...colors });
 
 console.log([..."abc"]);
 
-// ================== While loops ======================= //
+/* !!!!!!!!!!!!!!!!!!! While loops !!!!!!!!!!!!!!!!! */
 
 var count = 0;
 
@@ -35,7 +35,7 @@ while (count <= 10) {
   count++;
 }
 
-// ================== do While loops ======================= //
+/* !!!!!!!!!!!!!!!!! do While loops !!!!!!!!!!!!!!!!! */
 
 var text = "";
 var i = 0;
