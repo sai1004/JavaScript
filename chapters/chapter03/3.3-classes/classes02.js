@@ -24,4 +24,3 @@ console.log(profile);
 
 console.log(profile.getName());
 
-console.log("ksjdfh");

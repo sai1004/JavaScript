@@ -1,22 +1,29 @@
-/* A Simple Linear algorithm printing numbers from 0 to n-1 */
-// function exampleLinear(n) {
-//   for (let i = 0; i < n; i++) {
-//     console.log(i);
-//   }
-// }
+/* !!!!!!!!!!!!!!!!!!!!! A Simple Linear algorithm printing numbers from 0 to n-1 !!!!!!!!!!!!!!!!!!!! */
+
+/* """""""" O(n) algorithm is printing numbers from 0 to n-1 """""""""" */
+
+function exampleLinear(n) {
+  for (let i = 0; i < n; i++) {
+    console.log(i);
+  }
+}
 
 // exampleLinear(10);
 
-// function quadratic(n) {
-//   for (let i = 0; i < n; i++) {
-//     console.log("this is 1st", i);
-//     for (let j = i; j < n; j++) {
-//       console.log("this is 2nd", j);
-//     }
-//   }
-// }
+/* """""""""""""" Similarly, O(n)2 is quadratic time """""""""""""""" */
+
+function quadratic(n) {
+  for (let i = 0; i < n; i++) {
+    console.log("this is 1st", i);
+    for (let j = i; j < n; j++) {
+      console.log("this is 2nd", j);
+    }
+  }
+}
 
 // quadratic(15);
+
+/* """""""""""""" O(n)3 is cubic time. """""""""""""" */
 
 function cubic(n) {
   for (let i = 0; i < n; i++) {

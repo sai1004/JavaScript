@@ -15,5 +15,3 @@ function sayHi() {
 // const add = (a, b) => a + b;
 const name = "wes";
 const hello = "hello my name is " + name + ". Nice to meet you";
-
-

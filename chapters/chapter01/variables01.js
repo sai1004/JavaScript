@@ -1,8 +1,8 @@
 var Name = "jake Francis"; // bad way
 var NAME = "jake Francis"; // bad way
 var NamE = "jake Francis"; // bad way
-var name = "jake Francis"; // correct way
-var _name = "jake ";
+var name = "jake Thomos"; // correct way
+var _name = "jake ";  // correct way
 console.log(name);
 console.log(NamE);
 // console.log(_name)
