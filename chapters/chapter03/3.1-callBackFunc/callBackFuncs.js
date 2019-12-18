@@ -9,7 +9,7 @@ Simply put: A callback is a function that is to be executed after another functi
 
 function add(a, b, callback) {
   console.log(`The sum of ${a} and ${b} is ${a + b}.` + "<br>");
-  callback(); // callback argument is called here, So callback function is printed here after the above line
+  callback(); // callback argument is called here, So callback function is Executed here after the above line
 }
 
 // add() function is called with arguments given below

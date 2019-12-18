@@ -14,6 +14,10 @@ var arr3 = arr1.concat(arr2); // concating array
 
 console.log(arr3);
 
+var arrNums = [1, 2, 3, 7, 8, 5, 9, 8, 2, 3, 6, 5, 4, 8, 9];
+
+console.log(arrNums.sort());
+
 /* """"""""""""""" Getting index position of elements """"""""""""""" */
 
 var students = ["bobby", "johny", "papa", "julie"];
