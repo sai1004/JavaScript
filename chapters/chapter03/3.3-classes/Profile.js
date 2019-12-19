@@ -1,17 +1,22 @@
 import { Car } from "./Car";
 
 class Profile {
-  constructor(name, email, mobile, password, dob, car = Car) {
+  car = new Car();
+
+  constructor(name, email, mobile, password, dob) {
     this.name = name;
     this.email = email;
     this.mobile = mobile;
     this.password = password;
     this.dob = dob;
-    this.car = Car.getPrice();
   }
 
   getName() {
     return this.name;
+  }
+
+  getPrice() {
+    return console.log(car.getCarPrice());
   }
 }
 
