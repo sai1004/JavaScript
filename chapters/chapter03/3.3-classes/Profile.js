@@ -1,14 +1,17 @@
+import { Car } from "./Car";
+
 class Profile {
-  constructor(name, email, mobile, password, dob) {
+  constructor(name, email, mobile, password, dob, car = Car) {
     this.name = name;
     this.email = email;
     this.mobile = mobile;
     this.password = password;
     this.dob = dob;
+    this.car = Car.getPrice();
   }
 
   getName() {
-    return `${this.name}`;
+    return this.name;
   }
 }
 
@@ -23,4 +26,3 @@ var profile = new Profile(
 console.log(profile);
 
 console.log(profile.getName());
-
