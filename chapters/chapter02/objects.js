@@ -28,7 +28,6 @@ Object.freeze(car);
 // console.log(Object.values(car));
 console.log(car.name);
 
-
 if (car.name == "" || car.name == null) {
   console.log("enter the value");
 }

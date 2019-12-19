@@ -1,6 +1,6 @@
-/* !!!!!!!!!!!!!!!!!!!!! A Simple Linear algorithm printing numbers from 0 to n-1 !!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!! algorithm printing numbers from 0 to n-1 !!!!!!!!!!!!!!!!!!!! */
 
-/* """""""" O(n) algorithm is printing numbers from 0 to n-1 """""""""" */
+/* """""""" Big Notation O(n) A Simple Linear algorithm is printing numbers from 0 to n-1 """""""""" */
 
 function exampleLinear(n) {
   for (let i = 0; i < n; i++) {
