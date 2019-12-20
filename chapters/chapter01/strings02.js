@@ -31,8 +31,7 @@ console.log(sentence.startsWith("T"));
 console.log(sentence.endsWith("e"));
 
 console.log(sentence.endsWith("E"));
-
-console.log(sentence);
+ 
 
 var trimMe = "    iam string taking Long unWanted Spaces    ";
 
