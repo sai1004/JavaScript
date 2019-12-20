@@ -1,22 +1,61 @@
-var string = "To live Like a King work Hard like slave";
+var sentence = "To live Like a King work Hard like a slave";
 
+console.log(sentence.toLowerCase());
 
-// console.log(string.split(' '))
+console.log(sentence.toUpperCase());
 
+console.log(sentence.bold());
 
-// console.log(string.slice(0,8))
-// console.log(string.replace('king','\n')) // \n breaks the line
-// console.log(string.charAt(0))
-// console.log(string.charCodeAt('To'))
-// console.log(string.concat(' \n this is secondary string'))
-// console.log(string.indexOf('live'))
-// console.log(string.lastIndexOf('v'))
-// // console.log(string.length(''))
-// // console.log(string.localeCompare())
-// console.log(string.search('l'))
-// console.log(string.startsWith('To'))
-// console.log(string.startsWith('To live'))
-// console.log(string.endsWith('e'))
+console.log(sentence.slice(3, 7));
+
+console.log(sentence.split(" "));
+
+console.log(sentence.search("a"));
+
+console.log(sentence.replace("King", "queen"));
+
+console.log(sentence.replace(" ", "\n"));
+
+console.log(sentence.repeat(2));
+
+console.log(sentence.concat(", I am appended to this string."));
+
+console.log(sentence.includes("live"));
+
+/* """"""""""""" Case Sencitive """"""""""""" */
+
+console.log(sentence.startsWith("t"));
+
+console.log(sentence.startsWith("T"));
+
+console.log(sentence.endsWith("e"));
+
+console.log(sentence.endsWith("E"));
+
+console.log(sentence);
+
+var trimMe = "    iam string taking Long unWanted Spaces    ";
+
+console.log(trimMe.trim());
+
+/* """""""""""""""" tricky type casting """""""""""""""" */
+var a = "101" - 1; // o/p: 100
+
+console.log(a);
+
+/* """""""""""""""" type Conversion """""""""""""""" */
+
+var a = "iam string";
+
+var b = 420;
+
+var c = null;
+
+var d = undefined;
+
+console.log(typeof (a + b));
+
+console.log(typeof b.toString());
 
 // var str = "hey JudE";
 // var re = /[A-Z]/g;
@@ -39,8 +78,3 @@ var string = "To live Like a King work Hard like slave";
 // let array = [...str.matchAll(regexp)];
 
 // console.log(array[0]);
- 
-/* tricky type casting */
-var a = "101" - 1; // o/p: 100
-
-console.log(a);
