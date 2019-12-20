@@ -46,6 +46,15 @@ console.log((b -= a));
 
 console.log((a *= b));
 
+
+// let counter = 2;
+// counter++; // works the same as counter = counter + 1, but is shorter
+// alert( counter ); // 3
+
+// let counter = 2;
+// counter--; // works the same as counter = counter - 1, but is shorter
+// alert( counter ); // 1
+
 /* """"""""""""""" Type Operators """"""""""""""" */
 
 var Bike = { make: "Honda", model: "CLIQ", year: 2018 };
@@ -75,7 +84,16 @@ console.log(Bike); //
 /* """"""""""""""" typeof """"""""""""""" */
 
 let message = "Welcome to " + "JavaTpoint";
-console.log(typeof message); //
+console.log(typeof message)
+
+typeof undefined // "undefined"
+typeof 0 // "number"
+typeof true // "boolean"
+typeof "foo" // "string"
+typeof Symbol("id") // "symbol"
+typeof Math // "object" (1)
+typeof null // "object" (2)
+typeof alert // "function" (3)
 
 /* """"""""""""""" instanceof """"""""""""""" */
 

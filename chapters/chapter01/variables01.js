@@ -28,3 +28,11 @@ const html = `
 `;
 
 console.log(html);
+
+let user = 'John', age = 25, message = 'Hello';
+
+
+var a = undefined
+
+var b = null
+
