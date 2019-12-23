@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="myId" src="../02.js-slider/img1.jpg" alt="img" height="300px" />
+
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+
+    <script>
+      var el = document.getElementById("myId");
+      // changeing attribute by calling attr
+      el.src = "../02.js-slider/img2.jpg";
+
+      //   setTimeout(() => {
+      //     el.src = "../02.js-slider/img2.jpg";
+      //   }, 2000);
+
+      var anchor = document.getElementsByTagName("a");
+
+      anchor[0].href = "http://www.google.com";
+    </script>
+  </body>
+</html>
