@@ -39,6 +39,14 @@ you(5, 5);
 console.log(you(2, 2));
 
 
+function volPizza(radius, height) {
+  let result = radius ** 2 * height * Math.PI;
+
+  return result;
+}
+
+console.log(volPizza(7, 2));
+
 
 /* """""""""""""""" Genrating uid """""""""""""""" */
 
@@ -58,3 +66,5 @@ function newId() {
 }
 
 console.log(newId());
+
+
