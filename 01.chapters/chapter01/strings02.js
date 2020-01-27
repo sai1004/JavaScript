@@ -22,6 +22,18 @@ console.log(sentence.concat(", I am appended to this string."));
 
 console.log(sentence.includes("live"));
 
+console.log(sentence.indexOf("K"));
+
+console.log(sentence.lastIndexOf("a"));
+
+console.log(sentence.charAt(6));
+
+console.log(sentence.charCodeAt("e"));
+
+console.log(sentence.substring());
+
+console.log("----------- ------------------");
+
 /* """"""""""""" Case Sencitive """"""""""""" */
 
 console.log(sentence.startsWith("t"));
@@ -31,8 +43,6 @@ console.log(sentence.startsWith("T"));
 console.log(sentence.endsWith("e"));
 
 console.log(sentence.endsWith("E"));
-
-console.log(sentence);
 
 var trimMe = "    iam string taking Long unWanted Spaces    ";
 

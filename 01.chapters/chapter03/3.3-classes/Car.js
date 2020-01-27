@@ -1,5 +1,6 @@
-export class Car {
-  constructor(brand, name, price, color) {
+class Car {
+  constructor(id, brand, name, price, color) {
+    this.id = id;
     this.brand = brand;
     this.name = name;
     this.price = price;
@@ -7,6 +8,8 @@ export class Car {
   }
 
   getCarPrice() {
-    return this.price;
+    console.log(this.id);
+
+    return this.id;
   }
 }
