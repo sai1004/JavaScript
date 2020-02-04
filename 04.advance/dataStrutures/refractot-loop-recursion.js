@@ -1,7 +1,7 @@
 const items = [[1,2,3],[4,5,6]]
 
 
-function findsix() {
+function findsix(i) {
   let hasSix = "no!"
   i.forEach(a => {
     a.forEach(l => {
