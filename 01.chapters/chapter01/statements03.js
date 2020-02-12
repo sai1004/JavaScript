@@ -32,26 +32,14 @@ if (age >= 18) {
 var subject = "english";
 
 if (subject == "math") {
-
   console.log("This is math Subject");
-
 } else if (subject == "science") {
-
   console.log("This is science Subject");
-
 } else if (subject == "english") {
-
   console.log("This is english Subject");
-
-}
-else {
-
+} else {
   console.log("please enter the valid subject.");
-
 }
-
-
-
 
 var item = "";
 

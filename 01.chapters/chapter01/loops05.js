@@ -20,6 +20,21 @@ for (let value of ["a", "b", "c"]) {
   console.log(value);
 }
 
+/* ES 5 ForLoop */
+var arr = [
+  { item: "asd", price: 12 },
+  { item: "asd", price: 13 },
+  { item: "asd", price: 15 },
+  { item: "asd", price: 16 }
+];
+
+var total = 0;
+
+arr.forEach(i => {
+  total = total + i.price;
+});
+console.log(total);
+
 /*  """""""""""""""""" converting array to object """""""""""""""""" */
 
 console.log({ ...colors });

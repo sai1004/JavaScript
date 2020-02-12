@@ -19,17 +19,24 @@ let localVar = "This var is block level Scope.";
 
 let localVar = "i am already declared, i cannot change my value";
 
+<<<<<<< HEAD:chapters/chapter01/variables01.js
 const localVar = "i am already declared, i cannot change my value";
+=======
+// const html = `
+//   <div>
+//     <h2>${name}</h2>
+//     <p>${hello}</p>
+//   </div>
+// `;
+>>>>>>> 778969b8de50f376605b331b1113a24af08b671a:01.chapters/chapter01/variables01.js
 
-const html = `
-  <div>
-    <h2>${name}</h2>
-    <p>${hello}</p>
-  </div>
-`;
+// console.log(html);
 
-console.log(html);
+let user = "John",
+  age = 25,
+  message = "Hello";
 
+<<<<<<< HEAD:chapters/chapter01/variables01.js
 let user = "John",
   age = 25,
   message = "Hello";
@@ -37,3 +44,10 @@ let user = "John",
 var a = undefined;
 
 var b = null;
+=======
+var a = undefined;
+
+var b = null;
+
+ 
+>>>>>>> 778969b8de50f376605b331b1113a24af08b671a:01.chapters/chapter01/variables01.js
