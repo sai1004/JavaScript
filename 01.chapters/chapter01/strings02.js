@@ -43,10 +43,6 @@ console.log(sentence.startsWith("T"));
 console.log(sentence.endsWith("e"));
 
 console.log(sentence.endsWith("E"));
-<<<<<<< HEAD:chapters/chapter01/strings02.js
- 
-=======
->>>>>>> 778969b8de50f376605b331b1113a24af08b671a:01.chapters/chapter01/strings02.js
 
 var trimMe = "    iam string taking Long unWanted Spaces    ";
 
