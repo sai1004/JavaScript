@@ -55,19 +55,20 @@ getStr.forEach(item => {
 */
 
 // genrating random id using math function
-function randomStr(len, id) {
-  var str = "";
-  for (var i = len; i > 0; i--) {
-    str += id[Math.floor(Math.random() * id.length)]; // alternate of math.floor is ~~ (VALUE)
-  }
-  return str;
-}
+// function randomStr(len, id) {
+//   var str = "";
+//   for (var i = len; i > 0; i--) {
+//     str += id[Math.floor(Math.random() * id.length)]; // alternate of math.floor is ~~ (VALUE)
+//   }
+//   return str;
+// }
 
-console.log(randomStr(20, "kjsdfh458645kdjfgh"));
+// console.log(randomStr(20, "kjsdfh458645kdjfgh"));
 
-function uid() {
-  let regx = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-  let uid = randomStr(20, regx);
+// function uid() {
+//   let regx = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+//   let uid = randomStr(20, regx);
 
-  return uid.toUpperCase();
-}
+//   return uid.toUpperCase();
+// }
+
