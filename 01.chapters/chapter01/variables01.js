@@ -17,7 +17,7 @@ console.log(firstName, lastName);
 
 let localVar = "This var is block level Scope.";
 
-console.log(localVar);
+let localVar = "i am already declared, i cannot change my value";
 
 // const html = `
 //   <div>
