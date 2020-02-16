@@ -1,5 +1,8 @@
 # JavaScript
 
+
+https://www.freecodecamp.org/news/how-javascript-implements-oop/
+
 https://github.com/wesbos/beginner-javascript
 
 https://alligator.io/js/
