@@ -90,11 +90,12 @@ function generateStrongPass(password) {
 
     mergeLetters += firstOfDiv;
   }
-  console.log(mergeLetters);
+  // console.log(mergeLetters);
 
-  console.log(mergeLetters.split(""));
+  // console.log(mergeLetters.split(""));
 
   return strongPassword;
 }
 
-console.log(generateStrongPass("To live Like a King work Hard like a slave"));
+// console.log(generateStrongPass("To live Like a King work Hard like a slave"));
+

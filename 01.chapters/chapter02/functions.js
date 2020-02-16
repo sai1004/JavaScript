@@ -44,7 +44,7 @@ function volPizza(radius, height) {
   return result;
 }
 
-// console.log(volPizza(7, 2));
+console.log(volPizza(7, 2));
 
 /* """""""""""""""" Genrating uid """""""""""""""" */
 
@@ -65,27 +65,7 @@ function newId() {
 
 // console.log(newId());
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-
-for (let i = 0; i <= numbers.length; i++) {
-  if (numbers[i] % 2 == 0) {
-    return true;
-  }
-}
-
-function sortToEven(arr) {
-  let sortArray = [];
-
-  if (arr % 2 == 0) {
-    console.log(arr);
-
-    return sortArray.push(arr);
-  }
-
-  return sortArray;
-}
-
-console.log(sortToEven(numbers));
+/* """""""""""" factorial """""""""""" */
 
 const factorial = x => {
   if (x === 0) {
@@ -95,3 +75,44 @@ const factorial = x => {
 };
 
 console.log(factorial(5));
+
+/* """""""""""" find if x is prime number """""""""""" */
+
+let x = 12;
+
+function isPrime(num) {
+  if (num == 1) {
+    return false;
+  }
+
+  for (let i = 0; i < parseInt(num / 2) + 1; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+    return true;
+  }
+}
+
+console.log(isPrime(x));
+
+/* Async Await Simple Example to Understand */
+
+function doA() {
+  setTimeout(() => {
+    console.log("3 seconds passed!");
+  }, 3000);
+}
+
+function doB() {
+  setTimeout(() => {
+    console.log("9 seconds passed!");
+  }, 7000);
+}
+
+async function doAll() {
+  await doA();
+
+  await doB();
+}
+
+console.log(doAll());
