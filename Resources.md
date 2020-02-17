@@ -7,6 +7,8 @@ https://github.com/wesbos/beginner-javascript
 
 https://alligator.io/js/
 
+https://alligator.io/js/async-functions/
+
 https://www.tutorialspoint.com/webgl/webgl_rotation.htm
 
 https://stackoverflow.com/questions/6715514/javascript-brute-force-into-web-form
