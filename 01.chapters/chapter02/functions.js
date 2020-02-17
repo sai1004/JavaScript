@@ -116,3 +116,39 @@ async function doAll() {
 }
 
 console.log(doAll());
+
+/* ||||||||||||||||||||||||||||||||||||||||| */
+
+function asyncFunc(work) {
+  return new Promise(function(resolve, reject) {
+    if (work === "") {
+      reject(Error("Nothing"));
+      setTimeout(() => {
+        resolve(work);
+      }, 1000);
+    }
+  });
+}
+
+asyncFunc("work 1")
+  .then(
+    // task 1
+    function(result) {
+      console.log(result);
+      return asyncFunc("work 2"); // task 2
+    },
+    function(error) {
+      console.log(error);
+    }
+  )
+  .then(
+    function(result) {
+      console.log(result);
+    },
+    function(error) {
+      console.log(error);
+    }
+  );
+console.log("END");
+
+/* work 1 and 2 is done in asynchronously  */
