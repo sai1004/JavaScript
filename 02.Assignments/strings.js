@@ -12,3 +12,6 @@ var task = "httpgooglecom";
 let part = task.replace("p", "p://").replace("e", "e.");
 
 console.log(part);
+
+// o/p: http://google.com
+
