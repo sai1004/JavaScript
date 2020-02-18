@@ -26,17 +26,17 @@ function add(x, y) {
   return x + y;
 }
 
-console.log(add(2, 5));
+// console.log(add(2, 5));
 // changing function name
 const me = add;
 
 me(3, 3);
-console.log(me(3, 3));
+// console.log(me(3, 3));
 
 const you = add;
 
 you(5, 5);
-console.log(you(2, 2));
+// console.log(you(2, 2));
 
 function volPizza(radius, height) {
   let result = radius ** 2 * height * Math.PI;
@@ -63,4 +63,92 @@ function newId() {
   return uid;
 }
 
-console.log(newId());
+// console.log(newId());
+
+/* """""""""""" factorial """""""""""" */
+
+const factorial = x => {
+  if (x === 0) {
+    return 1;
+  }
+  return x * factorial(x - 1);
+};
+
+console.log(factorial(5));
+
+/* """""""""""" find if x is prime number """""""""""" */
+
+let x = 12;
+
+function isPrime(num) {
+  if (num == 1) {
+    return false;
+  }
+
+  for (let i = 0; i < parseInt(num / 2) + 1; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+    return true;
+  }
+}
+
+console.log(isPrime(x));
+
+/* Async Await Simple Example to Understand */
+
+function doA() {
+  setTimeout(() => {
+    console.log("3 seconds passed!");
+  }, 3000);
+}
+
+function doB() {
+  setTimeout(() => {
+    console.log("9 seconds passed!");
+  }, 7000);
+}
+
+async function doAll() {
+  await doA();
+
+  await doB();
+}
+
+console.log(doAll());
+
+/* ||||||||||||||||||||||||||||||||||||||||| */
+
+function asyncFunc(work) {
+  return new Promise(function(resolve, reject) {
+    if (work === "") {
+      reject(Error("Nothing"));
+      setTimeout(() => {
+        resolve(work);
+      }, 1000);
+    }
+  });
+}
+
+asyncFunc("work 1")
+  .then(
+    // task 1
+    function(result) {
+      console.log(result);
+      return asyncFunc("work 2"); // task 2
+    },
+    function(error) {
+      console.log(error);
+    }
+  )
+  .then(
+    function(result) {
+      console.log(result);
+    },
+    function(error) {
+      console.log(error);
+    }
+  );
+console.log("END");
+
+/* work 1 and 2 is done in asynchronously  */

@@ -1,8 +1,13 @@
 # JavaScript
 
+
+https://www.freecodecamp.org/news/how-javascript-implements-oop/
+
 https://github.com/wesbos/beginner-javascript
 
 https://alligator.io/js/
+
+https://alligator.io/js/async-functions/
 
 https://www.tutorialspoint.com/webgl/webgl_rotation.htm
 
