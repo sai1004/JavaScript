@@ -67,24 +67,41 @@ console.log(typeof (a + b));
 
 console.log(typeof b.toString());
 
-// var str = "hey JudE";
-// var re = /[A-Z]/g;
-// var re2 = /[.]/g;
-// console.log(str.search(re)); // returns 4, which is the index of the first capital letter "J"
-// console.log(str.search(re2)); // returns -1 cannot find '.' dot punctuation
+var str = "hey JudE";
+var re = /[A-Z]/g;
+var re2 = /[.]/g;
+console.log(str.search(re)); // returns 4, which is the index of the first capital letter "J"
+console.log(str.search(re2)); // returns -1 cannot find '.' dot punctuation
 
-// var worldString = 'Hello, world';
+var worldString = "Hello, world";
 
-// console.log(worldString.small());     // <small>Hello, world</small>
-// console.log(worldString.big());       // <big>Hello, world</big>
-// console.log(worldString.fontsize(7)); // <font size="7">Hello, world</fontsize>
+console.log(worldString.small()); // <small>Hello, world</small>
+console.log(worldString.big()); // <big>Hello, world</big>
+console.log(worldString.fontsize(7)); // <font size="7">Hello, world</fontsize>
 
-// var regx = /[A-Z]/g
-// console.log(string.match(regx)) // Finding The Capital letters in string var using math and regx expression
+var regx = /[A-Z]/g;
+console.log(string.match(regx)); // Finding The Capital letters in string var using math and regx expression
 
-// let regexp = /t(e)(st(\d?))/g;
-// let str = 'test1 test2';
+let regexp = /t(e)(st(\d?))/g;
+let str = "test1 test2";
 
-// let array = [...str.matchAll(regexp)];
+let array = [...str.matchAll(regexp)];
 
-// console.log(array[0]);
+console.log(array[0]);
+
+var paragraph =
+  'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.';
+
+var words = paragraph.split(" ");
+
+console.log(words.length);
+
+var captial = /[A-Z]/g;
+
+console.log("Capital letters are", paragraph.match(captial));
+
+var small = /[a-z]/g;
+
+var smal = paragraph.match(small);
+
+console.log("Small letters are: ");

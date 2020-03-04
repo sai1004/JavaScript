@@ -17,7 +17,7 @@ const fliterdItems = items.filter(item => {
 console.log(items);
 console.log(filteredItems);
 
-//===================================================================
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 // method for mapping items this will print only price of items
 
@@ -28,7 +28,7 @@ const itemNames = items.map(item => {
 console.log(items);
 console.log(itemNames);
 
-//===================================================================
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 // method for finding items
 
@@ -39,7 +39,7 @@ const foundItem = items.find(item => {
 console.log(items);
 console.log(foundItem);
 
-//===================================================================
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 // method for forEach
 
@@ -47,7 +47,7 @@ items.forEach(item => {
   console.log(items.price);
 });
 
-//===========================================================================
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 // method for some
 
@@ -57,7 +57,7 @@ const hasInexpensiveItems = items.some(item => {
 
 console.log(hasInexpensiveItems);
 
-//===========================================================================
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 // method for every
 
@@ -67,7 +67,7 @@ const hasInexpensiveItems = items.every(item => {
 
 console.log(hasInexpensiveItems);
 
-//===========================================================================
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 // method for reduce
 
@@ -77,7 +77,7 @@ const total = items.reduce((currentTotal, item) => {
 
 console.log(total);
 
-//===========================================================================
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 // method for includes
 const items = [1, 2, 3, 4, 5, 6];
@@ -86,7 +86,7 @@ const includesTwo = items.includes(7);
 
 console.log(includesTwo);
 
-//===========================================================================
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 const person = {
   firstName: "jake",

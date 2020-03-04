@@ -10,6 +10,8 @@ const companies = [
   { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
 ];
 
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+
 // 1. Remove duplicates from an array
 var fruits = [
   "banana",
@@ -30,10 +32,15 @@ console.log(uniqueFruits); // returns [“banana”, “apple”, “orange”, 
 var uniqueFruits2 = [new Set(fruits)];
 console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
 
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+
 var company = { ...companies }; // Es 6 itterator
+
 console.table(company);
 
 console.log(newCompany);
+
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 companies.map((item, index) => {
   if (Object.keys(item) == "") {
@@ -42,6 +49,9 @@ companies.map((item, index) => {
     console.log(index, item);
   }
 });
+
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+
 // to change the index value of array
 console
   .log(
@@ -55,16 +65,16 @@ console
 
   [(1, 2, 3)].map(i => 1 + 5);
 
-// function sum (a, b) {
-//   return Promise(function (resolve, reject) {
-//     setTimeout(function () {                                       // send the response after 1 second
-//       if (typeof a !== "number" || typeof b !== "number") {        // testing input types
-//         return reject(new TypeError("Inputs must be numbers"));
-//       }
-//       resolve(a + b);
-//     }, 1000);
-//   });
-// }
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+
+let allTypeData = ["a", "b", "c", undefined, "g", undefined];
+
+var removeUndefinedVal = allTypeData.filter(item => {
+  return item !== undefined;
+});
+console.log(removeUndefinedVal);
+
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 // var Promise = sum(10, 5);
 // Promsise.then(function (result) {
@@ -76,60 +86,3 @@ console
 // });
 
 // })
-
-// if (!Object.prototype.filter) {
-//   function filter(predicate) {
-//     const obj = this;
-//     if (!obj.__proto__ || obj.__proto__.constructor.name !== "Object") {
-//       throw new Error(
-//         "Connot invoke the filter method: the input is not an Object."
-//       );
-//     }
-//     const newObj = {};
-//     for (let prop in obj) {
-//       if (obj.hasOwnProperty(prop) && predicate(obj[prop], prop, obj)) {
-//         newObj[prop] = obj[prop];
-//       }
-//     }
-//     return newObj;
-//   }
-//   Object.defineProperty(Object.prototype, 'filter', {
-//     value: filter,
-//     writable: true,
-//     configurable: true
-//   })
-// }
-
-// const greetings = {
-//   a: 'Hello',
-//   b: 'Hey',
-//   c: 'Bye Bye'
-// }
-
-// const longGreetings = greetings.filter((configurable, key ) => configurable.length >= 5);
-
-// console.table(longGreetings)
-
-// var paragraph =
-//   'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.';
-
-// var words = paragraph.split(' ')
-
-// console.log(words.length)
-
-// var captial = /[A-Z]/g;
-
-// console.log("Capital letters are", paragraph.match(captial));
-
-// var small = /[a-z]/g
-
-// var smal = paragraph.match(small)
-
-// console.log('Small letters are: ', )
-
-let allTypeData = ["a", "b", "c", undefined, "g", undefined];
-
-var removeUndefinedVal = allTypeData.filter(item => {
-  return item !== undefined;
-});
-console.log(removeUndefinedVal);

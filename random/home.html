@@ -7,5 +7,27 @@
   </head>
   <body>
     <h1>Welcome to Home Page!</h1>
+
+    <button id="demo" class="btn" onclick="runEvent()">Click</button>
+    <script>
+      var eventbtn = false;
+
+      // var getEle = document.getElementById("demo");
+
+      // getEle.addEventListener("click", runEvent);
+
+      function runEvent() {
+        // console.log(e.target.id);
+        // console.log(e.target.class);
+        // console.log("clicked");
+        eventbtn = true;
+      }
+
+      if (eventbtn == true) {
+        console.log("Me Got Clicked By Some One! ");
+      } else {
+        console.log("Not Clicked Yet! ");
+      }
+    </script>
   </body>
 </html>

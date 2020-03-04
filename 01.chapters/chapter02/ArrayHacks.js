@@ -43,3 +43,28 @@ console.log(
     return Math.random() - 0.5;
   })
 ); // [2,1,3]
+
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+
+// if (!Object.prototype.filter) {
+//   function filter(predicate) {
+//     const obj = this;
+//     if (!obj.__proto__ || obj.__proto__.constructor.name !== "Object") {
+//       throw new Error(
+//         "Connot invoke the filter method: the input is not an Object."
+//       );
+//     }
+//     const newObj = {};
+//     for (let prop in obj) {
+//       if (obj.hasOwnProperty(prop) && predicate(obj[prop], prop, obj)) {
+//         newObj[prop] = obj[prop];
+//       }
+//     }
+//     return newObj;
+//   }
+//   Object.defineProperty(Object.prototype, 'filter', {
+//     value: filter,
+//     writable: true,
+//     configurable: true
+//   })
+// }
