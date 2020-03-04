@@ -1,4 +1,24 @@
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+
+var promise = new Promise(function(resolve, reject) {
+  const x = 12;
+  const y = 12;
+  if (x === y) {
+    resolve();
+  } else {
+    reject();
+  }
+});
+
+promise
+  .then(function() {
+    console.log("Success, x == y is: True ");
+  })
+  .catch(function() {
+    console.log("Some error has occured  x == y is: Not True ");
+  });
+
+/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 function sum(a, b) {
   return Promise(function(resolve, reject) {
     setTimeout(function() {
@@ -11,3 +31,5 @@ function sum(a, b) {
     }, 1000);
   });
 }
+
+// https://javascript.info/promise-basics
