@@ -67,7 +67,7 @@ const hasInexpensiveItems = items.every(item => {
 
 console.log(hasInexpensiveItems);
 
-/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+/* """"""""""""""""""""""""" reduce """"""""""""""""""""""""""""" */
 
 // method for reduce
 
@@ -77,7 +77,7 @@ const total = items.reduce((currentTotal, item) => {
 
 console.log(total);
 
-/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+/* """""""""""""""""""""""" includes """"""""""""""""""""""""""" */
 
 // method for includes
 const items = [1, 2, 3, 4, 5, 6];
@@ -85,17 +85,3 @@ const items = [1, 2, 3, 4, 5, 6];
 const includesTwo = items.includes(7);
 
 console.log(includesTwo);
-
-/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
-
-const person = {
-  firstName: "jake",
-  lastName: "fransis",
-  mobile: "+1669854655",
-  email: "jake@gmail.com",
-  fullName: function() {
-    return "this person fullname is " + this.firstName + " " + this.lastName;
-  }
-};
-
-document.write(person.fullName());

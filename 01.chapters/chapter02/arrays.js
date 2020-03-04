@@ -10,9 +10,40 @@ const companies = [
   { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
 ];
 
+/* """"""""""""""""""""""""Es 6 itterator""""""""""""""""""""""""" */
+
+var company = { ...companies };
+
+console.table(company);
+
+console.log(newCompany);
+
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
-// 1. Remove duplicates from an array
+companies.map((item, index) => {
+  if (Object.keys(item) == "") {
+    return console.log("dfsd");
+  } else {
+    console.log(index, item);
+  }
+});
+
+/* """""""""""""""""""""""change the index value of array""""""""""""""""""""" */
+
+console
+  .log(
+    (companies[3] = {
+      name: "Company Six",
+      category: "Finance",
+      start: 1987,
+      end: 2010
+    })
+  )
+
+  [(1, 2, 3)].map(i => 1 + 5);
+
+/* """""""""""""""""""" Remove duplicates from an array"""""""""""""""""""""" */
+
 var fruits = [
   "banana",
   "apple",
@@ -31,39 +62,6 @@ console.log(uniqueFruits); // returns [“banana”, “apple”, “orange”, 
 // Second method
 var uniqueFruits2 = [new Set(fruits)];
 console.log(uniqueFruits2); // returns [“banana”, “apple”, “orange”, “watermelon”, “grape”]
-
-/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
-
-var company = { ...companies }; // Es 6 itterator
-
-console.table(company);
-
-console.log(newCompany);
-
-/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
-
-companies.map((item, index) => {
-  if (Object.keys(item) == "") {
-    return console.log("dfsd");
-  } else {
-    console.log(index, item);
-  }
-});
-
-/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
-
-// to change the index value of array
-console
-  .log(
-    (companies[3] = {
-      name: "Company Six",
-      category: "Finance",
-      start: 1987,
-      end: 2010
-    })
-  )
-
-  [(1, 2, 3)].map(i => 1 + 5);
 
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
