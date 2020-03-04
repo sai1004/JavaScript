@@ -17,9 +17,6 @@ add(5, 6, function disp() {
   console.log("This must be printed after addition.");
 });
 
-
-
-
 function first() {
   // Simulate a code delay
   setTimeout(function() {
