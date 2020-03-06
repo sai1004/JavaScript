@@ -48,3 +48,37 @@ if (!item) {
 } else {
   console.log("item There");
 }
+
+/*  */
+
+var math = 85;
+
+var science = 80;
+
+var english = 75;
+
+var social = 85;
+
+var computer = 99;
+
+var gk = 80;
+
+var totalMarks = math + science + english + social + computer + gk;
+
+console.log("The Total Marks is:", totalMarks);
+
+// var percentage = (totalMarks / 600) * 100;
+
+var percentage = 65;
+
+if (percentage < 65 ) {
+  console.log(" average ! ");
+} else if (percentage > 90) {
+  console.log("Good,grade A++ ! And Percentage is :  ", percentage);
+} else if (percentage > 75) {
+  console.log(" grade A And Percentage is:", percentage);
+} else if (percentage > 65) {
+  console.log("grade A+ ! And Percentage is:", percentage);
+} else {
+  console.log("please Try Hard Next Time!");
+}
