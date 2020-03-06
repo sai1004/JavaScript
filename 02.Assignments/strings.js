@@ -15,21 +15,3 @@ console.log(part);
 
 // o/p: http://google.com
 
-var promise = new Promise(function(resolve, reject) {
-  const x = 888;
-  const y = 88;
-
-  if (x == y) {
-    resolve();
-  } else {
-    reject();
-  }
-});
-
-promise
-  .then(function() {
-    console.log("x == y is: True ");
-  })
-  .catch(function() {
-    console.log(" x == y is: Not True ");
-  });
