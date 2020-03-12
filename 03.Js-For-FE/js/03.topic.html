@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>canvas</title>
+  </head>
+  <body>
+    <script>
+      // Using canvas elements
+      var canvas = document.createElement("canvas");
+      canvas.width = 500;
+      canvas.height = 250;
+
+      var context = canvas.getContext("2d");
+
+      context.font = "30px Cursive";
+      context.fillText("hello world!", 50, 60); //adding text to canvas
+
+      document.body.appendChild(canvas);
+
+      //   Using SVG
+
+      var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.width = 500;
+      svg.height = 200;
+
+      var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      text.setAttribute("x", "0");
+      text.setAttribute("y", "50");
+      text.style.fontFamily = "Times New Roman";
+      text.style.fontSize = "60";
+
+      text.textContent = "Hello World";
+
+      svg.appendChild(text); // appending child text inside the svg ele
+
+      document.body.appendChild(svg); // appending a child svg inside the body
+
+      // Image file
+
+      var img = new Image();
+
+      img.src = "https://i.ytimg.com/vi/zecueq-mo4M/maxresdefault.jpg";
+
+      img.style.width = "500px";
+      img.style.height = "200px";
+      document.body.appendChild(img);
+    </script>
+  </body>
+</html>

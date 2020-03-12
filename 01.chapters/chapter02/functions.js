@@ -44,7 +44,7 @@ function volPizza(radius, height) {
   return result;
 }
 
-console.log(volPizza(7, 2));
+// console.log(volPizza(7, 2));
 
 /* """""""""""""""" Genrating uid """""""""""""""" */
 
@@ -74,7 +74,7 @@ const factorial = x => {
   return x * factorial(x - 1);
 };
 
-console.log(factorial(5));
+// console.log(factorial(5));
 
 /* """""""""""" find if x is prime number """""""""""" */
 
@@ -93,4 +93,31 @@ function isPrime(num) {
   }
 }
 
-console.log(isPrime(x));
+function reverseString(str) {
+  return [...String(str)].reverse().join("");
+}
+
+console.log(reverseString("stackoverflow")); // "wolfrevokcats"
+console.log(reverseString(1337)); // "7331"
+console.log(reverseString([1, 2, 3])); // "3,2,1"
+
+// console.log(isPrime(x));
+
+// in ES-5:
+
+var maxFinder = {
+  max: 0,
+  find: function(numbers) {
+    //let's itterate
+    numbers.forEach(function(element) {
+      var self = this;
+      // if element is greater , set it as the max
+      if (element > self.max) {
+        self.max = element;
+      }
+    });
+  }
+};
+
+maxFinder.find([2, 3, 4]);
+console.log(maxFinder.max);
