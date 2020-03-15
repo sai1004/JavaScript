@@ -16,8 +16,6 @@ var company = { ...companies };
 
 console.table(company);
 
-console.log(newCompany);
-
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 companies.map((item, index) => {

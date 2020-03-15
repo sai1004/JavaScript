@@ -5,7 +5,6 @@ var regex = /r(e)/g;
 
 console.log(str.match(regex));
 
+var x = parseInt(1515);
 
-var x = parseInt(1515)
-
-console.log(x)
+console.log(x);
