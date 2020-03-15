@@ -1,3 +1,6 @@
+// Syntax
+// class ChildClass extends ParentClass { ... }
+
 class Animal {
   constructor(speed) {
     this.speed = speed;

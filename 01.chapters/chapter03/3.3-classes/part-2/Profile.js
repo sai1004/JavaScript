@@ -11,5 +11,5 @@ class Employee extends Profile {
   }
 }
 
-employeeOne = new Employee("jimmy", "kimmy", "TECH789");
+employeeOne = new Employee("jimmy", 25, "TECH789");
 console.log(employeeOne);
