@@ -108,3 +108,37 @@ function generateStrongPass(password) {
 }
 
 // console.log(generateStrongPass("To live Like a King work Hard like a slave"));
+
+
+function calc(balls, fours, sixers) {
+  var value;
+  if (balls == 0 && fours == 0 && sixers == 0) {
+    value = 0;
+  } else {
+    value = balls / fours + sixers;
+  }
+
+  return value;
+}
+
+// console.log(calc(0, 0, 0));
+
+// || any one is 0 all 0
+
+// && any one is 0 not all 0
+
+ 
+
+
+function xBallForBoundaries(balls, fours, sixers)  {
+  let value ;
+  if (balls == 0 || fours == 0 || sixers == 0) {
+    value = 0;
+  } else {
+    value = balls /parseInt( fours + sixers);
+  }
+
+  return value.toFixed(2);
+}
+
+console.log(xBallForBoundaries(10,0,0));
