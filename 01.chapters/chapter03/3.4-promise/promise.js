@@ -20,18 +20,19 @@ promise
 
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 function sum(a, b) {
-  return Promise(function(resolve, reject) {
-    setTimeout(function() {
-      // send the response after 1 second
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
       if (typeof a !== "number" || typeof b !== "number") {
-        // testing input types
-        return reject(new TypeError("Inputs must be numbers"));
+        return reject(new Error("Type Error: Inputs Must Be Number"));
       }
-      resolve(a + b);
-    }, 1000);
+      resolve(a+b) 
+    },2000);
   });
 }
 
+sum(2,2).then((data)=>{
+  console.log(data)
+})
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
