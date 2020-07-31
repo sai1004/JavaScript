@@ -65,17 +65,16 @@
 
 var arr = [1, 7, 3, 4];
 
-  
-if ( [1, 2, 3].includes(arr[1])) {
-  console.log("1-3");
-} else if ( [4, 5, 6].includes(arr[1])) {
-  console.log("4-6");
-} else if ( [7, 8, 9].includes(arr[1])) {
-  console.log("7-9");
-} else if ( [10, 11, 12].includes(arr[1])) {
-  console.log("10-12");
-} else if ( [13, 14, 15].includes(arr[1])) {
-  console.log("13-15");
+if ([1, 2, 3].includes(arr[1])) {
+   console.log("1-3");
+} else if ([4, 5, 6].includes(arr[1])) {
+   console.log("4-6");
+} else if ([7, 8, 9].includes(arr[1])) {
+   console.log("7-9");
+} else if ([10, 11, 12].includes(arr[1])) {
+   console.log("10-12");
+} else if ([13, 14, 15].includes(arr[1])) {
+   console.log("13-15");
 }
 
 // var count;

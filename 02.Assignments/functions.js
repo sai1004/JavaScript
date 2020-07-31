@@ -3,11 +3,11 @@
 // // Q) create range function
 
 function range(start, stop) {
-  var count = [];
-  for (var i = start; i <= stop; i++) {
-    count.push(i);
-  }
-  return count;
+   var count = [];
+   for (var i = start; i <= stop; i++) {
+      count.push(i);
+   }
+   return count;
 }
 
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
@@ -15,16 +15,16 @@ function range(start, stop) {
 // // Q) Find missing number in array?
 
 function findMissingNumbers(array) {
-  const arraySize = array.length;
-  const missedNum = [];
-  let i = 0;
-  let j = array[0];
-  let jSize = array[arraySize - 1];
-  while (j < jSize) {
-    array[i] === j ? (i += 1) : missedNum.push(j);
-    j++;
-  }
-  return missedNum;
+   const arraySize = array.length;
+   const missedNum = [];
+   let i = 0;
+   let j = array[0];
+   let jSize = array[arraySize - 1];
+   while (j < jSize) {
+      array[i] === j ? (i += 1) : missedNum.push(j);
+      j++;
+   }
+   return missedNum;
 }
 
 console.log(findMissingNumbers(list));
@@ -37,10 +37,10 @@ var str = "hello i am the king";
 
 var getStr = str.split(" ");
 
-getStr.forEach(item => {
-  var j = item.replace(item, item[0].toUpperCase() + item.slice(1));
+getStr.forEach((item) => {
+   var j = item.replace(item, item[0].toUpperCase() + item.slice(1));
 
-  console.log(j.charAt(j));
+   console.log(j.charAt(j));
 });
 
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
@@ -48,14 +48,14 @@ getStr.forEach(item => {
 // /* Q) Take Input from user AND PRINT the output like next alpha bit of the each letter in the string and replace it*/
 
 function encrypt(userInput) {
-  for (let i = 0; i < userInput.length; i++) {
-    letterCode = userInput[i].charCodeAt(userInput[i]);
+   for (let i = 0; i < userInput.length; i++) {
+      letterCode = userInput[i].charCodeAt(userInput[i]);
 
-    replaceValue = userInput.replace(userInput, 1 + letterCode);
+      replaceValue = userInput.replace(userInput, 1 + letterCode);
 
-    gotVal = String.fromCharCode(replaceValue);
-    console.log(gotVal);
-  }
+      gotVal = String.fromCharCode(replaceValue);
+      console.log(gotVal);
+   }
 }
 console.log(encrypt("hillo"));
 
@@ -64,61 +64,60 @@ console.log(encrypt("hillo"));
 // // genrating random id using math function
 
 function randomStr(len, id) {
-  var str = "";
-  for (var i = len; i > 0; i--) {
-    str += id[Math.floor(Math.random() * id.length)]; // alternate of math.floor is ~~ (VALUE)
-  }
-  return str;
+   var str = "";
+   for (var i = len; i > 0; i--) {
+      str += id[Math.floor(Math.random() * id.length)]; // alternate of math.floor is ~~ (VALUE)
+   }
+   return str;
 }
 
 console.log(randomStr(20, "kjsdfh458645kdjfgh"));
 
 function uid() {
-  let regx = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-  let uid = randomStr(20, regx);
+   let regx = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+   let uid = randomStr(20, regx);
 
-  return uid.toUpperCase();
+   return uid.toUpperCase();
 }
 
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
 function generateStrongPass(password) {
-  // let password = "";
+   // let password = "";
 
-  let strongPassword = "";
+   let strongPassword = "";
 
-  let mergeLetters = "";
+   let mergeLetters = "";
 
-  regex = /[/s]/;
+   regex = /[/s]/;
 
-  chunkSentence = password.split(" ");
+   chunkSentence = password.split(" ");
 
-  for (let i = 0; i < chunkSentence.length; i++) {
-    firstOfDiv = chunkSentence[i].slice(0, 1);
+   for (let i = 0; i < chunkSentence.length; i++) {
+      firstOfDiv = chunkSentence[i].slice(0, 1);
 
-    console.log(firstOfDiv);
+      console.log(firstOfDiv);
 
-    mergeLetters += firstOfDiv;
-  }
-  // console.log(mergeLetters);
+      mergeLetters += firstOfDiv;
+   }
+   // console.log(mergeLetters);
 
-  // console.log(mergeLetters.split(""));
+   // console.log(mergeLetters.split(""));
 
-  return strongPassword;
+   return strongPassword;
 }
 
 // console.log(generateStrongPass("To live Like a King work Hard like a slave"));
 
-
 function calc(balls, fours, sixers) {
-  var value;
-  if (balls == 0 && fours == 0 && sixers == 0) {
-    value = 0;
-  } else {
-    value = balls / fours + sixers;
-  }
+   var value;
+   if (balls == 0 && fours == 0 && sixers == 0) {
+      value = 0;
+   } else {
+      value = balls / fours + sixers;
+   }
 
-  return value;
+   return value;
 }
 
 // console.log(calc(0, 0, 0));
@@ -127,18 +126,15 @@ function calc(balls, fours, sixers) {
 
 // && any one is 0 not all 0
 
- 
+function xBallForBoundaries(balls, fours, sixers) {
+   let value;
+   if (balls == 0 || fours == 0 || sixers == 0) {
+      value = 0;
+   } else {
+      value = balls / parseInt(fours + sixers);
+   }
 
-
-function xBallForBoundaries(balls, fours, sixers)  {
-  let value ;
-  if (balls == 0 || fours == 0 || sixers == 0) {
-    value = 0;
-  } else {
-    value = balls /parseInt( fours + sixers);
-  }
-
-  return value.toFixed(2);
+   return value.toFixed(2);
 }
 
-console.log(xBallForBoundaries(10,0,0));
+console.log(xBallForBoundaries(10, 0, 0));

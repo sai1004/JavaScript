@@ -1,7 +1,7 @@
 var profile = {
-  name: "kiran",
-  email: "kiran@xyz.com",
-  mobile: 1234567890
+   name: "kiran",
+   email: "kiran@xyz.com",
+   mobile: 1234567890,
 };
 
 profile.password = "secrete";

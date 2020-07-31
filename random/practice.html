@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Document</title>
-  </head>
-  <body>
-    <h3 id="header" style="text-align: center">JavaScript Practice</h3>
+   <head>
+      <title>Document</title>
+   </head>
+   <body>
+      <h3 id="header" style="text-align: center;">JavaScript Practice</h3>
 
-    <input type="text" id="userinput" />
+      <input type="text" id="userinput" />
 
-    <button id="button">Add</button>
+      <button id="button">Add</button>
 
-    <p id="para"></p>
+      <p id="para"></p>
 
-    <p id="center"></p>
+      <p id="center"></p>
 
-    <!-- ========================================================================= -->
+      <!-- ========================================================================= -->
 
-    <script>
-      var button = document
-        .getElementById("button")
-        .addEventListener("keypress", enter);
+      <script>
+         var button = document.getElementById("button").addEventListener("keypress", enter);
 
-      function enter(e) {
-        var userinput = document.getElementById("userinput").value;
+         function enter(e) {
+            var userinput = document.getElementById("userinput").value;
 
-        document.getElementById("para").innerHTML = userinput;
+            document.getElementById("para").innerHTML = userinput;
 
-        console.log(e.target.id, e.type);
+            console.log(e.target.id, e.type);
 
-        document.body.style.backgroundColor = "blue";
+            document.body.style.backgroundColor = "blue";
 
-        // document.getElementById("center").style.color = "red";
+            // document.getElementById("center").style.color = "red";
 
-        // document.getElementById("center").innerHTML = "hey you there!!";
-      }
+            // document.getElementById("center").innerHTML = "hey you there!!";
+         }
 
-      let newWindow = open("/", "example", "width=700,height=600");
-      newWindow.onload = function() {
-        newWindow.open();
-        alert(newWindow.closed); // true
-      };
-    </script>
-  </body>
+         let newWindow = open("/", "example", "width=700,height=600");
+         newWindow.onload = function () {
+            newWindow.open();
+            alert(newWindow.closed); // true
+         };
+      </script>
+   </body>
 </html>

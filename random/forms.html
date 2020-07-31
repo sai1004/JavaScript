@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Validation</title>
-  </head>
-  <body>
-    <h1 id="valid">Welcome to form validation</h1>
-    <form action="/home.html" onsubmit="return validate()">
-      <label for="Email">Email:</label>
-      <input type="text" name="email" id="email" placeholder="enter email" />
-      <br />
-      <br />
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="enter password"
-      />
-      <br /><br />
-      <p id="error"></p>
-      <button type="submit" onclick="disp()">Submit</button>
-    </form>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Validation</title>
+   </head>
+   <body>
+      <h1 id="valid">Welcome to form validation</h1>
+      <form action="/home.html" onsubmit="return validate()">
+         <label for="Email">Email:</label>
+         <input type="text" name="email" id="email" placeholder="enter email" />
+         <br />
+         <br />
+         <label for="password">Password:</label>
+         <input type="password" name="password" id="password" placeholder="enter password" />
+         <br /><br />
+         <p id="error"></p>
+         <button type="submit" onclick="disp()">Submit</button>
+      </form>
 
-    <script>
-      function disp() {
-        var canBeAny = document.getElementById("valid");
-        canBeAny.innerHTML = "i am changed through script";
-      }
+      <script>
+         function disp() {
+            var canBeAny = document.getElementById("valid");
+            canBeAny.innerHTML = "i am changed through script";
+         }
 
-      function validate() {
-        var email = document.getElementById("email").value;
+         function validate() {
+            var email = document.getElementById("email").value;
 
-        var password = document.getElementById("password").value;
+            var password = document.getElementById("password").value;
 
-        var err = document.getElementById("error");
+            var err = document.getElementById("error");
 
-        if (email == "" || password == "") {
-          err.innerHTML = "please enter all the fields";
-          alert("please enter all the fields");
-          return false;
-        } else {
-          return true;
-        }
-      }
-    </script>
-  </body>
+            if (email == "" || password == "") {
+               err.innerHTML = "please enter all the fields";
+               alert("please enter all the fields");
+               return false;
+            } else {
+               return true;
+            }
+         }
+      </script>
+   </body>
 </html>

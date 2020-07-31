@@ -86,30 +86,28 @@ var button = document.getElementById("submit");
 button.addEventListener("click", onSubmit);
 
 function onSubmit() {
-  var name = document.getElementById("name").value;
+   var name = document.getElementById("name").value;
 
-  var newUser = new newUser()
-   
-    newUser.name = String;
-    
-    newUser.name == name
+   var newUser = new newUser();
 
+   newUser.name = String;
 
+   newUser.name == name;
 
- console.log(newUser.name)
+   console.log(newUser.name);
 
-  // var users = [{"name":"sai"}];
+   // var users = [{"name":"sai"}];
 
-  // if (users.name == name) {
-  //   console.log("user Already exists ");
-  // } else if (name == "") {
-  //   console.log("please enter the vale ");
-  // } else {
-  //   users.push(name);
+   // if (users.name == name) {
+   //   console.log("user Already exists ");
+   // } else if (name == "") {
+   //   console.log("please enter the vale ");
+   // } else {
+   //   users.push(name);
 
-  //   console.log(users);
+   //   console.log(users);
 
-  //   // button.removeEventListener("click", onSubmit);
-  //   console.log("Cong user created Successfully ");
-  // }
+   //   // button.removeEventListener("click", onSubmit);
+   //   console.log("Cong user created Successfully ");
+   // }
 }

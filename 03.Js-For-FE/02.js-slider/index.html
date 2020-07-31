@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
-      <button onclick="previous()">Prev</button>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div>
+         <button onclick="previous()">Prev</button>
 
-      <img id="slider" src="./img1.jpg" alt="img" height="300px" />
+         <img id="slider" src="./img1.jpg" alt="img" height="300px" />
 
-      <button onclick="next()">Next</button>
-    </div>
+         <button onclick="next()">Next</button>
+      </div>
 
-    <script>
-      var images = ["./img1.jpg", "./img2.jpg", "./img3.jpg", "./img4.jpg"];
+      <script>
+         var images = ["./img1.jpg", "./img2.jpg", "./img3.jpg", "./img4.jpg"];
 
-      var num = 0;
+         var num = 0;
 
-      var slider = document.getElementById("slider");
+         var slider = document.getElementById("slider");
 
-      function next() {
-        num++;
-        if (num >= images.length) {
-          num = 0;
-        }
-        // getting src attribute and changing the value
-        slider.src = images[num];
-      }
+         function next() {
+            num++;
+            if (num >= images.length) {
+               num = 0;
+            }
+            // getting src attribute and changing the value
+            slider.src = images[num];
+         }
 
-      function previous() {
-        num--;
-        if (num < 0) {
-          num = images.length - 1;
-        }
-        // getting src attribute and changing the value
-        slider.src = images[num];
-      }
-    </script>
-  </body>
+         function previous() {
+            num--;
+            if (num < 0) {
+               num = images.length - 1;
+            }
+            // getting src attribute and changing the value
+            slider.src = images[num];
+         }
+      </script>
+   </body>
 </html>

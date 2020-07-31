@@ -1,152 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <style>
-      body {
-        font-family: Verdana, sans-serif;
-      }
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Document</title>
+      <style>
+         body {
+            font-family: Verdana, sans-serif;
+         }
 
-      img {
-        height: 300px;
-      }
+         img {
+            height: 300px;
+         }
 
-      /* Slideshow container */
-      .container {
-        height: 360px;
-        width: 250px;
-        box-sizing: border-box;
-        display: block;
-      }
+         /* Slideshow container */
+         .container {
+            height: 360px;
+            width: 250px;
+            box-sizing: border-box;
+            display: block;
+         }
 
-      /* The dots/bullets/indicators */
-      .dot {
-        height: 5px;
-        width: 5px;
-        margin: 0 2px;
-        background-color: transparent;
-        border-color: #ddd;
-        border-width: 5 px;
-        border-style: solid;
-        border-radius: 50%;
-        display: inline-block;
-        transition: border-color 0.6s ease;
-      }
+         /* The dots/bullets/indicators */
+         .dot {
+            height: 5px;
+            width: 5px;
+            margin: 0 2px;
+            background-color: transparent;
+            border-color: #ddd;
+            border-width: 5 px;
+            border-style: solid;
+            border-radius: 50%;
+            display: inline-block;
+            transition: border-color 0.6s ease;
+         }
 
-      .active {
-        border-color: #666;
-      }
+         .active {
+            border-color: #666;
+         }
 
-      /* Animation */
-      .fade {
-        -webkit-animation-name: fade-image;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade-image;
-        animation-duration: 1.5s;
-      }
+         /* Animation */
+         .fade {
+            -webkit-animation-name: fade-image;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade-image;
+            animation-duration: 1.5s;
+         }
 
-      @-webkit-keyframes fade-image {
-        from {
-          opacity: 0.4;
-        }
-        to {
-          opacity: 1;
-        }
-      }
+         @-webkit-keyframes fade-image {
+            from {
+               opacity: 0.4;
+            }
+            to {
+               opacity: 1;
+            }
+         }
 
-      @keyframes fade-image {
-        from {
-          opacity: 0.4;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Slideshow Container Div -->
-    <div class="container" id="demo" onmouseover="showSlides()">
-      <!-- Full-width images with caption text -->
-      <div class="image-slider fade">
-        <img src="img1.jpg" />
-        <!-- <div class="text">Image caption 1</div> -->
+         @keyframes fade-image {
+            from {
+               opacity: 0.4;
+            }
+            to {
+               opacity: 1;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Slideshow Container Div -->
+      <div class="container" id="demo" onmouseover="showSlides()">
+         <!-- Full-width images with caption text -->
+         <div class="image-slider fade">
+            <img src="img1.jpg" />
+            <!-- <div class="text">Image caption 1</div> -->
+         </div>
+
+         <div class="image-slider fade">
+            <img src="img2.jpg" />
+            <!-- <div class="text">Image caption 2</div> -->
+         </div>
+
+         <div class="image-slider fade">
+            <img src="img3.jpg" />
+            <!-- <div class="text">Image caption 3</div> -->
+         </div>
+
+         <div class="image-slider fade">
+            <img src="img4.jpg" />
+            <!-- <div class="text">Image caption 4</div> -->
+         </div>
+
+         <!-- The dots/circles -->
+         <div style="text-align: center;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+         </div>
       </div>
+      <br />
 
-      <div class="image-slider fade">
-        <img src="img2.jpg" />
-        <!-- <div class="text">Image caption 2</div> -->
-      </div>
+      <script>
+         var slideIndex = 0;
+         // call showslide method
 
-      <div class="image-slider fade">
-        <img src="img3.jpg" />
-        <!-- <div class="text">Image caption 3</div> -->
-      </div>
+         var container = document.getElementById("demo");
 
-      <div class="image-slider fade">
-        <img src="img4.jpg" />
-        <!-- <div class="text">Image caption 4</div> -->
-      </div>
+         container.addEventListener("onmouseover", chColor);
 
-      <!-- The dots/circles -->
-      <div style="text-align: center;">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </div>
-    <br />
+         // function chColor() {
+         document.body.style.backgroundColor = "red";
+         // }
 
-    <script>
-      var slideIndex = 0;
-      // call showslide method
+         container.removeEventListener("onmouseout", showSlides);
 
-      var container = document.getElementById("demo");
+         function showSlides() {
+            var i;
 
-      container.addEventListener("onmouseover", chColor);
+            // get the array of divs' with classname image-sliderfade
+            var slides = document.getElementsByClassName("image-slider");
 
-      // function chColor() {
-      document.body.style.backgroundColor = "red";
-      // }
+            // get the array of divs' with classname dot
+            var dots = document.getElementsByClassName("dot");
 
-      container.removeEventListener("onmouseout", showSlides);
+            for (i = 0; i < slides.length; i++) {
+               // initially set the display to
+               // none for every image.
+               slides[i].style.display = "none";
+            }
 
-      function showSlides() {
-        var i;
+            // increase by 1, Global variable
+            slideIndex++;
 
-        // get the array of divs' with classname image-sliderfade
-        var slides = document.getElementsByClassName("image-slider");
+            // check for boundary
+            if (slideIndex > slides.length) {
+               slideIndex = 1;
+            }
 
-        // get the array of divs' with classname dot
-        var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace("active", "");
+            }
 
-        for (i = 0; i < slides.length; i++) {
-          // initially set the display to
-          // none for every image.
-          slides[i].style.display = "none";
-        }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
 
-        // increase by 1, Global variable
-        slideIndex++;
-
-        // check for boundary
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace("active", "");
-        }
-
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-
-        // Change image every 2 seconds
-        setTimeout(showSlides, 1000);
-      }
-    </script>
-  </body>
+            // Change image every 2 seconds
+            setTimeout(showSlides, 1000);
+         }
+      </script>
+   </body>
 </html>

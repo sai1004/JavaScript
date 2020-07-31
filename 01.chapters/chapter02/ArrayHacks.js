@@ -39,9 +39,9 @@ console.log(Math.round(3.2));
 
 var list = [1, 2, 3];
 console.log(
-  list.sort(function() {
-    return Math.random() - 0.5;
-  })
+   list.sort(function () {
+      return Math.random() - 0.5;
+   })
 ); // [2,1,3]
 
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */

@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-  </head>
-  <body>
-    <div class="container">
-      <form action="/www.google.com" onsubmit="return validate()">
-        <label for="username"> User name </label>
+   <head>
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css" type="text/css" />
+   </head>
+   <body>
+      <div class="container">
+         <form action="/www.google.com" onsubmit="return validate()">
+            <label for="username"> User name </label>
 
-        <input type="text" id="username" name="username" required />
-        <br /><br />
-        <label for="psw"> Password </label>
+            <input type="text" id="username" name="username" required />
+            <br /><br />
+            <label for="psw"> Password </label>
 
-        <input
-          type="password"
-          id="psw"
-          name="psw"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          title="Must contain at least one number and one 
+            <input
+               type="password"
+               id="psw"
+               name="psw"
+               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+               title="Must contain at least one number and one 
           uppercase and lowercase letter, and at least 8 or more characters"
-          required
-        />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+               required
+            />
+            <input type="submit" value="Submit" />
+         </form>
+      </div>
 
-    <script>
-      var userName = document.getElementById("username").value;
+      <script>
+         var userName = document.getElementById("username").value;
 
-      var password = document.getElementById("psw").value;
+         var password = document.getElementById("psw").value;
 
-      function validate() {
-        if (userName == "" || password == "") {
-          console.log("please enter the fileds ");
-          return false;
-        } else {
-          true;
-        }
-      }
-    </script>
-  </body>
+         function validate() {
+            if (userName == "" || password == "") {
+               console.log("please enter the fileds ");
+               return false;
+            } else {
+               true;
+            }
+         }
+      </script>
+   </body>
 </html>

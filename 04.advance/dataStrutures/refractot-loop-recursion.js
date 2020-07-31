@@ -1,18 +1,19 @@
-const items = [[1,2,3],[4,5,6]]
-
+const items = [
+   [1, 2, 3],
+   [4, 5, 6],
+];
 
 function findsix(i) {
-  let hasSix = "no!"
-  i.forEach(a => {
-    a.forEach(l => {
-      if (l === 6) {
-        hasSix = "yes!"
-      }
-    })
-  })
-  
-  return hasSix
+   let hasSix = "no!";
+   i.forEach((a) => {
+      a.forEach((l) => {
+         if (l === 6) {
+            hasSix = "yes!";
+         }
+      });
+   });
+
+   return hasSix;
 }
 
-
-console.log(findsix(items)) // yes!
+console.log(findsix(items)); // yes!
