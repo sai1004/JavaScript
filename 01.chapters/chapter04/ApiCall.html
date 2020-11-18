@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-   </head>
-   <body>
-      <p id="output"></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="output"></p>
 
-      <script>
-         const API_URL = "https://starwars.egghead.training/";
+        <script>
+            const API_URL = "https://starwars.egghead.training/";
 
-         const output = document.getElementById("output");
+            const output = document.getElementById("output");
 
-         output.innerText = "Loading...";
+            output.innerText = "Loading...";
 
-         fetch(API_URL + "films")
-            .then((response) => response.json())
-            .then((films) => {
-               output.innerText = getFilmTitles(films);
-            });
+            fetch(API_URL + "films")
+                .then((response) => response.json())
+                .then((films) => {
+                    output.innerText = getFilmTitles(films);
+                });
 
-         function getFlimTitles(films) {
-            return films
-               .sort((a, b) => a.episode_id - b.episode_id)
-               .map((film) => `${flim.episode_id}. ${film.title} `)
-               .join("\n");
-         }
-      </script>
-   </body>
+            function getFlimTitles(films) {
+                return films
+                    .sort((a, b) => a.episode_id - b.episode_id)
+                    .map((film) => `${flim.episode_id}. ${film.title} `)
+                    .join("\n");
+            }
+        </script>
+    </body>
 </html>

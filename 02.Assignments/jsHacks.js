@@ -1,8 +1,8 @@
 /* --------  Converting to boolean using !! operator -------- */
 
 function Account(cash) {
-   this.cash = cash;
-   this.hasMoney = !!cash;
+    this.cash = cash;
+    this.hasMoney = !!cash;
 }
 
 var account = new Account(100.55);
@@ -17,7 +17,7 @@ console.log(emptyAccount.hasMoney); // false
 /********* Converting to number using + operator **********/
 
 function toNumber(strToNumber) {
-   return +strToNumber;
+    return +strToNumber;
 }
 
 console.log(toNumber("124"));

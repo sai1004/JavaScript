@@ -45,21 +45,21 @@ var firstTwoFinishers = racers.slice(0, 2);
 console.log(firstTwoFinishers);
 
 const employee = [
-   { userId: "1", firstName: "Romy", pay: 150000, email: "romin@gmail.com" },
+    { userId: "1", firstName: "Romy", pay: 150000, email: "romin@gmail.com" },
 
-   { userId: "2", firstName: "Neil", pay: 90000, email: "neilrirani@gmail.com" },
+    { userId: "2", firstName: "Neil", pay: 90000, email: "neilrirani@gmail.com" },
 
-   { userId: "3", firstName: "Tomy", pay: 130000, email: "tomhanks@gmail.com" },
+    { userId: "3", firstName: "Tomy", pay: 130000, email: "tomhanks@gmail.com" },
 
-   { userId: "4", firstName: "john", pay: 70000, email: "neilrirani@gmail.com" },
+    { userId: "4", firstName: "john", pay: 70000, email: "neilrirani@gmail.com" },
 
-   { userId: "5", firstName: "jake", pay: 130000, email: "tomhanks@gmail.com" },
+    { userId: "5", firstName: "jake", pay: 130000, email: "tomhanks@gmail.com" },
 ];
 
 /* """"""""""""""" Filter Method """"""""""""""" */
 
 var leastSalary = employee.filter((item) => {
-   return item.pay <= 100000;
+    return item.pay <= 100000;
 });
 
 console.log(leastSalary);
@@ -67,7 +67,7 @@ console.log(leastSalary);
 /* """"""""""""""" Map Method """"""""""""""" */
 
 var hikePay = employee.map((item) => {
-   return (item.pay = item.pay * 2);
+    return (item.pay = item.pay * 2);
 });
 
 console.log(hikePay);
@@ -77,13 +77,13 @@ console.log([1, 2, 3].map((index) => index + 5));
 /* """"""""""""""" ForEach Method """"""""""""""" */
 
 var employees = employee.forEach((item) => {
-   console.log(item);
+    console.log(item);
 });
 
 /* """"""""""""""" Reduce Method """"""""""""""" */
 
 var totalPayOfEmps = hikePay.reduce((accumulator, value) => {
-   return (item = accumulator + value);
+    return (item = accumulator + value);
 });
 
 console.log(totalPayOfEmps);
@@ -91,8 +91,8 @@ console.log(totalPayOfEmps);
 nums = [100, 100, 300, 100];
 
 var sum = nums.reduce((acc, val) => {
-   let item = acc + val;
-   return item;
+    let item = acc + val;
+    return item;
 });
 
 console.log(sum);
@@ -100,22 +100,22 @@ console.log(sum);
 /* """"""""""""""" finding objs in array """"""""""""""" */
 
 const pets = [
-   { type: "Dog", name: "Max" },
-   { type: "Cat", name: "Karl" },
-   { type: "Dog", name: "Tommy" },
+    { type: "Dog", name: "Max" },
+    { type: "Cat", name: "Karl" },
+    { type: "Dog", name: "Tommy" },
 ];
 
 pet = pets.find((pet) => pet.type === "Dog" && pet.name === "Tommy");
 console.log(pet);
 
 const inventory = [
-   { name: "apples", quantity: 2 },
-   { name: "bananas", quantity: 0 },
-   { name: "cherries", quantity: 5 },
+    { name: "apples", quantity: 2 },
+    { name: "bananas", quantity: 0 },
+    { name: "cherries", quantity: 5 },
 ];
 
 function findCherries(fruit) {
-   return fruit.name === "cherries";
+    return fruit.name === "cherries";
 }
 
 inventory.find(findCherries); // { name: 'cherries', quantity: 5 }

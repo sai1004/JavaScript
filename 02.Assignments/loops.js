@@ -7,7 +7,7 @@ var num = 4;
 let factorial = 1;
 
 for (let i = 1; i <= num; i++) {
-   factorial *= i;
+    factorial *= i;
 }
 
 // console.log(factorial);
@@ -27,9 +27,9 @@ console.log(randomColor);
 let ip = ["192.168.1.0"];
 
 for (i = 0; i < ip.length; i++) {
-   for (j = 0; j < 255; j++) {
-      // console.log(ip[i].slice(0, 10) + j);
-   }
+    for (j = 0; j < 255; j++) {
+        // console.log(ip[i].slice(0, 10) + j);
+    }
 }
 
 /* """"""""""" Randomly Genrate Mac Address """"""""""" */
@@ -37,22 +37,22 @@ for (i = 0; i < ip.length; i++) {
 var hex = "0123456789abcdef";
 
 var mac =
-   hex.charAt(Math.random() * 16) +
-   hex.charAt(Math.random() * 16) +
-   ":" +
-   hex.charAt(Math.random() * 16) +
-   hex.charAt(Math.random() * 16) +
-   ":" +
-   hex.charAt(Math.random() * 16) +
-   hex.charAt(Math.random() * 16) +
-   ":" +
-   hex.charAt(Math.random() * 16) +
-   hex.charAt(Math.random() * 16) +
-   ":" +
-   hex.charAt(Math.random() * 16) +
-   hex.charAt(Math.random() * 16) +
-   ":" +
-   hex.charAt(Math.random() * 16) +
-   hex.charAt(Math.random() * 16);
+    hex.charAt(Math.random() * 16) +
+    hex.charAt(Math.random() * 16) +
+    ":" +
+    hex.charAt(Math.random() * 16) +
+    hex.charAt(Math.random() * 16) +
+    ":" +
+    hex.charAt(Math.random() * 16) +
+    hex.charAt(Math.random() * 16) +
+    ":" +
+    hex.charAt(Math.random() * 16) +
+    hex.charAt(Math.random() * 16) +
+    ":" +
+    hex.charAt(Math.random() * 16) +
+    hex.charAt(Math.random() * 16) +
+    ":" +
+    hex.charAt(Math.random() * 16) +
+    hex.charAt(Math.random() * 16);
 
 console.log(mac);
