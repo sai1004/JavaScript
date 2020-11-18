@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>HTML Injection Attack!</h1>
+
+        <form action="http:localhost:5000/login">
+            <input type="text" name="name" id="name" required />
+            <input type="email" name="email" id="email" required />
+            <input type="password" name="password" id="password" required />
+
+            <button onclick="onSubmmit()">Submit</button>
+        </form>
+
+        <script>
+            function onSubmmit() {
+                console.log();
+                alert();
+            }
+        </script>
+    </body>
+</html>
