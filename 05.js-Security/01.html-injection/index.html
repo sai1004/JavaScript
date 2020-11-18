@@ -8,7 +8,7 @@
     <body>
         <h1>HTML Injection Attack!</h1>
 
-        <form action="http:localhost:5000/login">
+        <form action="/login" method="POST">
             <input type="text" name="name" id="name" required />
             <input type="email" name="email" id="email" required />
             <input type="password" name="password" id="password" required />
@@ -19,7 +19,6 @@
         <script>
             function onSubmmit() {
                 console.log();
-                alert();
             }
         </script>
     </body>
