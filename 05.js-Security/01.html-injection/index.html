@@ -8,18 +8,58 @@
     <body>
         <h1>HTML Injection Attack!</h1>
 
-        <form action="/login" method="POST">
+        <form>
             <input type="text" name="name" id="name" required />
             <input type="email" name="email" id="email" required />
             <input type="password" name="password" id="password" required />
 
+            <pre id="show"></pre>
+
             <button onclick="onSubmmit()">Submit</button>
         </form>
+
+        <p id="output"></p>
 
         <script>
             function onSubmmit() {
                 console.log();
+
+                let name = document.getElementById("name").value;
+
+                let pre = document.getElementById("show");
+
+                pre.innerHTML = name;
             }
+
+            const API_URL = "http://localhost:5000/";
+
+            const output = document.getElementById("output");
+
+            output.innerText = "Loading...";
+
+            fetch(API_URL + "details")
+                .then((response) => response.json())
+                .then((films) => {
+                    console.log(JSON.stringify(films));
+                    output.innerText = films;
+                });
+
+            // var formEle = `
+
+            //         <form action="/login" method="POST">
+            //             <input type="text" name="name" id="name" required />
+            //             <input type="email" name="email" id="email" required />
+            //             <input type="password" name="password" id="password" required />
+
+            //             <button onclick="onSubmmit()">Submit</button>
+            //         </form>
+            // `;
+
+            // var divEle = document.createElement("div");
+
+            // divEle.innerHTML = formEle;
+
+            // document.body.appendChild(divEle);
         </script>
     </body>
 </html>

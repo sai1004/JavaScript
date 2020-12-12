@@ -11,3 +11,9 @@ console.log(date.getFullYear());
 console.log(date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear());
 
 console.log(months[date.getMonth()]);
+
+const timeInMinutes = 1;
+const currentTime = Date.parse(new Date());
+const deadline = new Date(currentTime + timeInMinutes * 60 * 1000);
+
+console.log(deadline);
