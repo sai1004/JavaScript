@@ -39,3 +39,26 @@ console.log(arr1.copyWithin(2, 0, 2));
 // console.log(arr2.some("c"));
 
 // console.log(arr2.every("c"));
+
+let numbers = [
+    { name: "sak", percentage: 23 },
+    { name: "sak", percentage: 23 },
+    { name: "sak", percentage: 23 },
+    { name: "sak", percentage: 23 },
+    { name: "sak", percentage: 23 },
+    { name: "sak", percentage: 23 },
+];
+
+function calculateTotal(arrayOfNumbers) {
+    let arr = [];
+    const reducer = (accumlator, currentValue) => accumlator + currentValue;
+
+    arrayOfNumbers.forEach((element) => {
+        arr.push(element.percentage);
+    });
+    console.log(arr);
+
+    return arr.reduce(reducer);
+}
+
+console.log("total", calculateTotal(numbers));
