@@ -1,3 +1,27 @@
+/* -------------------------------------------------------------------------------------- */
+/*  Async await makes asynchronous code look like it\’s synchronous.
+    This has only been possible because of the reintroduction of promises into node.js.
+    Async-Await only works with functions that return a promise. 
+*/
+
+const getRandomNumber = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(Math.floor(Math.random() * 20));
+        }, 2000);
+    });
+};
+
+const addNumber = async () => {
+    const sum = (await getRandomNumber()) + (await getRandomNumber());
+    console.log("sum", sum);
+    return sum;
+};
+
+addNumber();
+
+/* -------------------------------------------------------------------------------------- */
+
 let myVar = undefined; // exe First
 
 // console.log("myVar", myVar);
