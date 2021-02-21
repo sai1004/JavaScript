@@ -1,43 +1,43 @@
 class person {
-   constructor(firstname, lastname, age) {
-      this._firstname = firstname;
+    constructor(firstname, lastname, age) {
+        this._firstname = firstname;
 
-      this._lastname = lastname;
+        this._lastname = lastname;
 
-      this._age = age;
-   }
+        this._age = age;
+    }
 
-   //returns full name with the use of the getter methods
+    //returns full name with the use of the getter methods
 
-   get fullName() {
-      let fullName = this.fname + " " + this.lname;
+    get fullName() {
+        let fullName = this.fname + " " + this.lname;
 
-      return fullName;
-   }
+        return fullName;
+    }
 
-   get fname() {
-      return this._firstname;
-   }
+    get fname() {
+        return this._firstname;
+    }
 
-   get lname() {
-      return this._lastname;
-   }
+    get lname() {
+        return this._lastname;
+    }
 
-   get age() {
-      return this._age;
-   }
+    get age() {
+        return this._age;
+    }
 
-   set fname(fname) {
-      this._firstname = fname;
-   }
+    set fname(fname) {
+        this._firstname = fname;
+    }
 
-   set lname(lname) {
-      this._lastname = lname;
-   }
+    set lname(lname) {
+        this._lastname = lname;
+    }
 
-   set age(age) {
-      this._age = age;
-   }
+    set age(age) {
+        this._age = age;
+    }
 }
 
 var person1 = new person("Casper", "Petersen", 28);

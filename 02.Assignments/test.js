@@ -180,18 +180,18 @@ console.log(classes);
 
 /* ---------------  Q4  --------------- */
 
-// Spread  Oprator
+// Spread  Operator
 
 let numbers = [1, 2, 3];
 
 console.log(...numbers);
 // 1 2 3
 
-function spreadOprator(x, y, z) {
+function spreadOperator(x, y, z) {
     return x + y + z;
 }
 
-console.log(spreadOprator(...numbers));
+console.log(spreadOperator(...numbers));
 
 let arr1 = [1, 2, 3, 4, 5];
 
@@ -200,8 +200,21 @@ let arr2 = [1, 2, 3, 4, 5];
 let arr3 = [...arr1, ...arr2];
 // let arr3 = [...[...arr1], ...[...arr2]];
 
-console.log(arr3)
+console.log(arr3);
+
+/* ---------------  Q5  --------------- */
+
+// https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b
+
+function Human(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.fullName = function () {
+        return this.firstName + " " + this.lastName;
+    };
+}
 
 
+var person1 = new Human("John", "wick")
 
-
+console.log(person1.firstName)
