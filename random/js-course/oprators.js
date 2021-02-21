@@ -41,9 +41,9 @@ console.log(5 > 2); // True
 console.log("jamsin" == "jamsin");
 
 if (1 == 2) {
-   console.log("true");
+    console.log("true");
 } else {
-   console.log("false");
+    console.log("false");
 }
 
 console.log(10 > 11 ? "TRUE statement" : "FALSE statement"); // (Then) terinary oparator
@@ -52,10 +52,10 @@ const x = 9;
 const y = 2;
 
 if (x == 10 && y == 5) {
-   // ampercent & takes both values shd be true
-   console.log("x is 10 and y is 5");
+    // ampercent & takes both values shd be true
+    console.log("x is 10 and y is 5");
 } else if (x > 10 && y < 10) {
-   console.log(" x is greater than 10 :" + x, "y is lesser than 10");
+    console.log(" x is greater than 10 :" + x, "y is lesser than 10");
 }
 
 // var userinput = prompt("what color you want?"); // to change body color

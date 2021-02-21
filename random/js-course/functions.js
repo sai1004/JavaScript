@@ -38,11 +38,11 @@ button.addEventListener("click", validate);
 var emptyArr = [];
 
 function validate(e) {
-   console.log(e.target.value);
-   var email = document.getElementById("email").value;
-   var passwd = document.getElementById("password").value;
+    console.log(e.target.value);
+    var email = document.getElementById("email").value;
+    var passwd = document.getElementById("password").value;
 
-   if (email == "" || email == null || passwd == "" || passwd == null) {
-      document.getElementById("para").innerHTML = "please enter the fields";
-   }
+    if (email == "" || email == null || passwd == "" || passwd == null) {
+        document.getElementById("para").innerHTML = "please enter the fields";
+    }
 }
