@@ -45,7 +45,7 @@ getStr.forEach((item) => {
 
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
 
-// /* Q) Take Input from user AND PRINT the output like next alpha bit of the each letter in the string and replace it*/
+// /* Q) Take Input from user AND PRINT the output like next alphabate of the each letter in the string and replace it*/
 
 function encrypt(userInput) {
     for (let i = 0; i < userInput.length; i++) {
@@ -110,7 +110,7 @@ function generateStrongPass(password) {
 // console.log(generateStrongPass("To live Like a King work Hard like a slave"));
 
 function calc(balls, fours, sixers) {
-    var value;
+    let value;
     if (balls == 0 && fours == 0 && sixers == 0) {
         value = 0;
     } else {
@@ -169,3 +169,13 @@ function findDataById(item, id) {
 }
 
 console.log(findDataById(countries, "AE"));
+
+function convertMonthsToYears(months) {
+    let totalMonthsInYear = 12;
+
+    let years = parseFloat(months / totalMonthsInYear);
+
+    return years;
+}
+
+console.log(convertMonthsToYears(14));

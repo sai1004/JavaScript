@@ -1,3 +1,29 @@
+/* !!!!!!!!!!!!!!!!! Using Array Destructuring to swap values !!!!!!!!!!!!!!!!! */
+
+let a = "world";
+let b = "hello";
+
+[a, b] = [b, a];
+
+// console.log(a);
+// console.log(b);
+
+/*
+
+The destructuring assignment is a JavaScript expression that makes it possible to unpack values from arrays or properties from objects into distinct variables.
+Let's get the month values from an array using destructuring assignment
+
+*/
+
+var [one, two, three] = ["Jan", "Feb", "Mar"];
+
+console.log(one);
+console.log(two);
+console.log(three);
+
+
+
+
 const arr = [
     {
         name: "john",

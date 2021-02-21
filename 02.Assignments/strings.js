@@ -17,6 +17,17 @@ let part = task.replace("p", "p://").replace("e", "e.");
 
 // curl -X DELETE --header 'Accept: application/json' 'http://127.0.0.1:8080/public-portal-api/api/nomination/delete-nomination-filename/3136163578?nominationId=%22New%20Text%20Document.txt%22&filename=9373'
 
+const str = "Lorem ipsum is a dummy data for developers!";
+
+function reverseString(str) {
+    let returnVal = str.split("").reverse().join("");
+    // let returnVal = [...str].reverse().join("");
+
+    return returnVal;
+}
+
+console.log(reverseString(str));
+
 function test(a, b, c) {
     let d = a + b;
     console.log(c);
