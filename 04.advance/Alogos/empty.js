@@ -1,13 +1,29 @@
-Array.prototype.foo = () => {
-    let c = []
-    for (let i = this.length; i < 0 ; i--) {
-        console.log(this[i])
-        c.push(this[i])
+function guessGame(n) {
+    let val = 0;
+
+    if (n == Math.floor(Math.random() * 6)) {
+        val = "Match ";
+    } else {
+        val = "Not Match";
     }
-    return c
-};
 
-let a = [1, 2, 3, 4, 5, 6, 75, 55, 3];
+    // console.log(Math.floor(Math.random() * 100));
+
+    return val;
+}
+
+console.log(guessGame(10));
 
 
-console.log(a.foo())
+function pyStr(str) {
+
+    if (str.startsWith("Py")) {
+        console.log(str)
+    } else {
+        console.log("Nooooooooooo")    
+    }
+
+}
+
+console.log(pyStr("Py string"))
+console.log(pyStr("Hello world"))

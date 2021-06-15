@@ -75,15 +75,4 @@ if ([1, 2, 3].includes(arr[1])) {
     console.log("13-15");
 }
 
-/* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
-
-// var Promise = sum(10, 5);
-// Promsise.then(function (result) {
-//  document.write(" 10 + 5: ", result);
-//  return sum(null, "foo");              // Invalid data and return another promise
-// }).then(function () {                   // Won't be called because of the error
-// }).catch(function (err) {               // The catch handler is called instead, after another second
-//  console.error(err);                   // => Please provide two numbers to sum.
-// });
-
-// })
+ 

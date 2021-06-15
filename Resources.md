@@ -25,3 +25,6 @@ https://hackernoon.com/javascript-hacks-for-es6-hipsters-67d633ce8ace
 https://www.freecodecamp.org/news/best-javascript-tutorial/
 
 https://javascript30.com/
+
+
+https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php
